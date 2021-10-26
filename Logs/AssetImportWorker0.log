@@ -15,11 +15,11 @@ C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49589
+61886
 Successfully changed project path to: C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed
 C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 95.00 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 100.86 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.26f1 (6f076387c01d)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/2021.1.26f1/Editor/Data/Resources/UnitySubsystems
@@ -35,183 +35,91 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/2021.1.26f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/2021.1.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/2021.1.26f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56276
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56792
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/2021.1.26f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.001599 seconds.
+Registered in 0.001616 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 84.65 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 92.91 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.533 seconds
+- Completed reload, in  1.866 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1533ms)
-		BeginReloadAssembly (54ms)
+	ReloadAssembly (1866ms)
+		BeginReloadAssembly (55ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
-		EndReloadAssembly (433ms)
-			LoadAssemblies (52ms)
+		EndReloadAssembly (453ms)
+			LoadAssemblies (53ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (141ms)
+			SetupTypeCache (140ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (26ms)
-			SetupLoadedEditorAssemblies (221ms)
+			SetupLoadedEditorAssemblies (236ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (5ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (85ms)
+				RefreshPlugins (93ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (104ms)
-				ProcessInitializeOnLoadMethodAttributes (25ms)
+				ProcessInitializeOnLoadAttributes (110ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.011249 seconds.
+Registered in 0.013135 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\hatin\UnityProjects\pibrary-for-unity-fixed\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\hatin\UnityProjects\pibrary-for-unity-fixed\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Error: Could not load signature of Firebase.Editor.GenerateXmlFromGoogleServicesJson:OnBundleIdChanged due to: Could not load file or assembly 'Google.JarResolver, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:Google.JarResolver, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-Unloading broken assembly Assets/Firebase/Editor/Firebase.Editor.dll, this assembly can cause crashes in the runtime
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.08 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 1.20 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-TypeLoadException: Could not load type of field 'Firebase.Editor.GenerateXmlFromGoogleServicesJson:<>f__mg$cache0' (17) due to: Could not load file or assembly 'Google.JarResolver, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:Google.JarResolver, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-  at (wrapper managed-to-native) System.RuntimeType.GetConstructors_native(System.RuntimeType,System.Reflection.BindingFlags)
-  at System.RuntimeType.GetConstructors_internal (System.Reflection.BindingFlags bindingAttr, System.RuntimeType reflectedType) [0x00008] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.GetConstructorCandidates (System.String name, System.Reflection.BindingFlags bindingAttr, System.Reflection.CallingConventions callConv, System.Type[] types, System.Boolean allowPrefixLookup) [0x00034] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.GetConstructors (System.Reflection.BindingFlags bindingAttr) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.GetDefaultConstructor () [0x0002c] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.CreateInstanceMono (System.Boolean nonPublic) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.CreateInstanceSlow (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00009] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.CreateInstanceDefaultCtor (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00027] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.Activator.CreateInstance (System.Type type, System.Boolean nonPublic) [0x00020] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.Activator.CreateInstance (System.Type type) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at UnityEditor.AssetPostprocessingInternal.GetMeshProcessorsHashString () [0x00035] in <fea4138086dc4e42a285e0e1e88527ef>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.AssetPostprocessingInternal:GetMeshProcessorsHashString()
-
-TypeLoadException: Could not load type of field 'Firebase.Editor.GenerateXmlFromGoogleServicesJson:<>f__mg$cache0' (17) due to: Could not load file or assembly 'Google.JarResolver, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:Google.JarResolver, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-  at (wrapper managed-to-native) System.RuntimeType.GetConstructors_native(System.RuntimeType,System.Reflection.BindingFlags)
-  at System.RuntimeType.GetConstructors_internal (System.Reflection.BindingFlags bindingAttr, System.RuntimeType reflectedType) [0x00008] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.GetConstructorCandidates (System.String name, System.Reflection.BindingFlags bindingAttr, System.Reflection.CallingConventions callConv, System.Type[] types, System.Boolean allowPrefixLookup) [0x00034] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.GetConstructors (System.Reflection.BindingFlags bindingAttr) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.GetDefaultConstructor () [0x0002c] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.CreateInstanceMono (System.Boolean nonPublic) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.CreateInstanceSlow (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00009] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.CreateInstanceDefaultCtor (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00027] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.Activator.CreateInstance (System.Type type, System.Boolean nonPublic) [0x00020] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.Activator.CreateInstance (System.Type type) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at UnityEditor.AssetPostprocessingInternal.GetTextureProcessorsHashString () [0x00035] in <fea4138086dc4e42a285e0e1e88527ef>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.AssetPostprocessingInternal:GetTextureProcessorsHashString()
-
-TypeLoadException: Could not load type of field 'Firebase.Editor.GenerateXmlFromGoogleServicesJson:<>f__mg$cache0' (17) due to: Could not load file or assembly 'Google.JarResolver, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:Google.JarResolver, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-  at (wrapper managed-to-native) System.RuntimeType.GetConstructors_native(System.RuntimeType,System.Reflection.BindingFlags)
-  at System.RuntimeType.GetConstructors_internal (System.Reflection.BindingFlags bindingAttr, System.RuntimeType reflectedType) [0x00008] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.GetConstructorCandidates (System.String name, System.Reflection.BindingFlags bindingAttr, System.Reflection.CallingConventions callConv, System.Type[] types, System.Boolean allowPrefixLookup) [0x00034] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.GetConstructors (System.Reflection.BindingFlags bindingAttr) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.GetDefaultConstructor () [0x0002c] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.CreateInstanceMono (System.Boolean nonPublic) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.CreateInstanceSlow (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00009] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.CreateInstanceDefaultCtor (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00027] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.Activator.CreateInstance (System.Type type, System.Boolean nonPublic) [0x00020] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.Activator.CreateInstance (System.Type type) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at UnityEditor.AssetPostprocessingInternal.GetAudioProcessorsHashString () [0x00035] in <fea4138086dc4e42a285e0e1e88527ef>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.AssetPostprocessingInternal:GetAudioProcessorsHashString()
-
-TypeLoadException: Could not load type of field 'Firebase.Editor.GenerateXmlFromGoogleServicesJson:<>f__mg$cache0' (17) due to: Could not load file or assembly 'Google.JarResolver, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:Google.JarResolver, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-  at (wrapper managed-to-native) System.RuntimeType.GetConstructors_native(System.RuntimeType,System.Reflection.BindingFlags)
-  at System.RuntimeType.GetConstructors_internal (System.Reflection.BindingFlags bindingAttr, System.RuntimeType reflectedType) [0x00008] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.GetConstructorCandidates (System.String name, System.Reflection.BindingFlags bindingAttr, System.Reflection.CallingConventions callConv, System.Type[] types, System.Boolean allowPrefixLookup) [0x00034] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.GetConstructors (System.Reflection.BindingFlags bindingAttr) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.GetDefaultConstructor () [0x0002c] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.CreateInstanceMono (System.Boolean nonPublic) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.CreateInstanceSlow (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00009] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.CreateInstanceDefaultCtor (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00027] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.Activator.CreateInstance (System.Type type, System.Boolean nonPublic) [0x00020] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.Activator.CreateInstance (System.Type type) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at UnityEditor.AssetPostprocessingInternal.GetSpeedTreeProcessorsHashString () [0x00035] in <fea4138086dc4e42a285e0e1e88527ef>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.AssetPostprocessingInternal:GetSpeedTreeProcessorsHashString()
-
-TypeLoadException: Could not load type of field 'Firebase.Editor.GenerateXmlFromGoogleServicesJson:<>f__mg$cache0' (17) due to: Could not load file or assembly 'Google.JarResolver, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null' or one of its dependencies. assembly:Google.JarResolver, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null type:<unknown type> member:(null) signature:<none>
-  at (wrapper managed-to-native) System.RuntimeType.GetConstructors_native(System.RuntimeType,System.Reflection.BindingFlags)
-  at System.RuntimeType.GetConstructors_internal (System.Reflection.BindingFlags bindingAttr, System.RuntimeType reflectedType) [0x00008] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.GetConstructorCandidates (System.String name, System.Reflection.BindingFlags bindingAttr, System.Reflection.CallingConventions callConv, System.Type[] types, System.Boolean allowPrefixLookup) [0x00034] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.GetConstructors (System.Reflection.BindingFlags bindingAttr) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.GetDefaultConstructor () [0x0002c] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.CreateInstanceMono (System.Boolean nonPublic) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.CreateInstanceSlow (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00009] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.RuntimeType.CreateInstanceDefaultCtor (System.Boolean publicOnly, System.Boolean skipCheckThis, System.Boolean fillCache, System.Threading.StackCrawlMark& stackMark) [0x00027] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.Activator.CreateInstance (System.Type type, System.Boolean nonPublic) [0x00020] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at System.Activator.CreateInstance (System.Type type) [0x00000] in <695d1cc93cca45069c528c15c9fdd749>:0 
-  at UnityEditor.AssetPostprocessingInternal.GetPrefabProcessorsHashString () [0x00035] in <fea4138086dc4e42a285e0e1e88527ef>:0 
-UnityEngine.DebugLogHandler:Internal_LogException(Exception, Object)
-UnityEngine.DebugLogHandler:LogException(Exception, Object)
-UnityEngine.Logger:LogException(Exception, Object)
-UnityEngine.Debug:LogException(Exception)
-UnityEditor.AssetPostprocessingInternal:GetPrefabProcessorsHashString()
-
-- Completed reload, in  1.042 seconds
+- Completed reload, in  1.098 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1043ms)
-		BeginReloadAssembly (140ms)
+	ReloadAssembly (1099ms)
+		BeginReloadAssembly (152ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		EndReloadAssembly (846ms)
-			LoadAssemblies (86ms)
+			CreateAndSetChildDomain (20ms)
+		EndReloadAssembly (888ms)
+			LoadAssemblies (93ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (331ms)
+			SetupTypeCache (353ms)
 			ReleaseScriptCaches (1ms)
 			RebuildScriptCaches (47ms)
-			SetupLoadedEditorAssemblies (283ms)
+			SetupLoadedEditorAssemblies (313ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (67ms)
-				ProcessInitializeOnLoadAttributes (197ms)
-				ProcessInitializeOnLoadMethodAttributes (8ms)
-				AfterProcessingInitializeOnLoad (6ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (211ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (7ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.06 ms, found 6 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 1.09 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3413 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 121.3 MB.
-System memory in use after: 121.6 MB.
+Unloading 3865 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 136.7 MB.
+System memory in use after: 137.0 MB.
 
-Unloading 67 unused Assets to reduce memory usage. Loaded Objects now: 3820.
-Total: 3.610600 ms (FindLiveObjects: 0.327000 ms CreateObjectMapping: 0.084000 ms MarkObjects: 3.124900 ms  DeleteObjects: 0.073600 ms)
+Unloading 69 unused Assets to reduce memory usage. Loaded Objects now: 4275.
+Total: 3.492000 ms (FindLiveObjects: 0.390600 ms CreateObjectMapping: 0.104900 ms MarkObjects: 2.910300 ms  DeleteObjects: 0.085100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -226,141 +134,63 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Plugins/UniRx
-  artifactKey: Guid(9a10e77438ec4c546b049c32446b2210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/UniRx using Guid(9a10e77438ec4c546b049c32446b2210) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5210fe5199926679f1c7b4e308a3f4b8') in 0.012305 seconds 
+  path: Assets/Pibrary/UI/Prefabs/InputField.prefab
+  artifactKey: Guid(3cb9f82ba4e78074f894c19a9ceda2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pibrary/UI/Prefabs/InputField.prefab using Guid(3cb9f82ba4e78074f894c19a9ceda2e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '57c65be415a3f97ff829860474c33225') in 0.381359 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 776.658166 seconds.
-  path: Assets/Firebase/Editor
-  artifactKey: Guid(c8e797faf91bc58468b29fc66a8e2cbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Firebase/Editor using Guid(c8e797faf91bc58468b29fc66a8e2cbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61fc12a3e3b42c062bef1ca66d21d833') in 0.006939 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.857256 seconds.
-  path: Assets/Firebase/Editor/Firebase.Editor.dll
-  artifactKey: Guid(9f2edbf81053418f879076c05f816dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Firebase/Editor/Firebase.Editor.dll using Guid(9f2edbf81053418f879076c05f816dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cac58bf9374f968010497a3bdb5137e') in 0.021563 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.745156 seconds.
-  path: Assets/Firebase/Editor/Firebase.Editor.dll
-  artifactKey: Guid(9f2edbf81053418f879076c05f816dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Firebase/Editor/Firebase.Editor.dll using Guid(9f2edbf81053418f879076c05f816dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82d21c0914b3243ef639c3285ee6d523') in 0.002128 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 16.753949 seconds.
-  path: Assets/Firebase/Editor/Firebase.Editor.dll.mdb
-  artifactKey: Guid(7f7b9cecf58b463599316e650bec7cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Firebase/Editor/Firebase.Editor.dll.mdb using Guid(7f7b9cecf58b463599316e650bec7cb6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da59e20c61673867154011abbd9e9de8') in 0.018455 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 45.191906 seconds.
-  path: Assets/Firebase/Editor/Firebase.Editor.dll
-  artifactKey: Guid(9f2edbf81053418f879076c05f816dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Firebase/Editor/Firebase.Editor.dll using Guid(9f2edbf81053418f879076c05f816dc2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0712ca84bc88462a5f82c7da362fc38e') in 0.006047 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.944187 seconds.
-  path: Assets/Firebase/Editor/FirebaseAuth_version-8.4.0_manifest.txt
-  artifactKey: Guid(6a5d2666aca4489d8804783ed2087843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Firebase/Editor/FirebaseAuth_version-8.4.0_manifest.txt using Guid(6a5d2666aca4489d8804783ed2087843) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c4c8f114f298cda49198b4b472569181') in 0.018913 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 312.195053 seconds.
-  path: Assets/ExternalDependencyManager/Editor
-  artifactKey: Guid(54b897230b434704ebd752788a6da9dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalDependencyManager/Editor using Guid(54b897230b434704ebd752788a6da9dc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10595c3ad05df31a095ed8b49ce1442e') in 0.007280 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.155431 seconds.
-  path: Assets/ExternalDependencyManager/Editor/Google.IOSResolver_v1.2.166.dll
-  artifactKey: Guid(0be593908d82451686bc8e5cc843a86f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ExternalDependencyManager/Editor/Google.IOSResolver_v1.2.166.dll using Guid(0be593908d82451686bc8e5cc843a86f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3f403aa3b1aae5751f1510bbd9b5a3e3') in 0.006184 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 219.025756 seconds.
-  path: Assets/Parse/Plugins
-  artifactKey: Guid(9d29bf00b58575345baeac93dfa3d1e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Parse/Plugins using Guid(9d29bf00b58575345baeac93dfa3d1e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b97321ee1700568c9d2e1f3f989d5a4') in 0.005876 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.594041 seconds.
-  path: Assets/Parse/Plugins/dotNet45
-  artifactKey: Guid(5dd0d2e55cc498f43b4f3629898eeb23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Parse/Plugins/dotNet45 using Guid(5dd0d2e55cc498f43b4f3629898eeb23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da9a96681650edb1e85fa922d39a3aaa') in 0.006270 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.075935 seconds.
-  path: Assets/Parse/Plugins/Unity.Compat.dll
-  artifactKey: Guid(015ef18e20f24535830f59eda9e70830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Parse/Plugins/Unity.Compat.dll using Guid(015ef18e20f24535830f59eda9e70830) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38fca6d1d9c8dee6dc074e0f95858108') in 0.006266 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.478175 seconds.
-  path: Assets/Parse/Plugins/Unity.Tasks.dll
-  artifactKey: Guid(93324a471a6d44bb8297d17d8b191e52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Parse/Plugins/Unity.Tasks.dll using Guid(93324a471a6d44bb8297d17d8b191e52) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '822a6a1da30210ac6c04368c7d8732e8') in 0.007242 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.901500 seconds.
-  path: Assets/Plugins/Android/com.android.support.support-compat-26.1.0.aar
-  artifactKey: Guid(0772766e781ad7b46a32eea68dd0aad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Android/com.android.support.support-compat-26.1.0.aar using Guid(0772766e781ad7b46a32eea68dd0aad0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26f9554c0310098289fd3f3075d48da9') in 0.007600 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.574882 seconds.
-  path: Assets/Plugins/Android/com.google.android.gms.play-services-tasks-16.0.1.aar
-  artifactKey: Guid(d20b672fbd7c4d54e818834328e9347d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Plugins/Android/com.google.android.gms.play-services-tasks-16.0.1.aar using Guid(d20b672fbd7c4d54e818834328e9347d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '286172239921d9c7e88b02192de9addb') in 0.007290 seconds 
+  Time since last request: 30.702245 seconds.
+  path: Assets/Pibrary/UI/Prefabs
+  artifactKey: Guid(a47b20c4fc5fe7b42824fa734bffe00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pibrary/UI/Prefabs using Guid(a47b20c4fc5fe7b42824fa734bffe00c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c2e369c96b3cc395e90487d499799f1') in 0.008255 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.012539 seconds.
+Registered in 0.011125 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\hatin\UnityProjects\pibrary-for-unity-fixed\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\hatin\UnityProjects\pibrary-for-unity-fixed\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.13 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 1.29 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.054 seconds
+- Completed reload, in  1.004 seconds
 Domain Reload Profiling:
-	ReloadAssembly (1054ms)
-		BeginReloadAssembly (125ms)
+	ReloadAssembly (1004ms)
+		BeginReloadAssembly (114ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (4ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (37ms)
-		EndReloadAssembly (864ms)
-			LoadAssemblies (91ms)
+			CreateAndSetChildDomain (39ms)
+		EndReloadAssembly (830ms)
+			LoadAssemblies (89ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (361ms)
+			SetupTypeCache (341ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (36ms)
-			SetupLoadedEditorAssemblies (280ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (271ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (54ms)
-				ProcessInitializeOnLoadAttributes (202ms)
-				ProcessInitializeOnLoadMethodAttributes (10ms)
-				AfterProcessingInitializeOnLoad (9ms)
+				BeforeProcessingInitializeOnLoad (55ms)
+				ProcessInitializeOnLoadAttributes (196ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (6ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Platform modules already initialized, skipping
 Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
-Refreshing native plugins compatible for Editor in 1.21 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 1.29 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3836 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 134.1 MB.
-System memory in use after: 134.3 MB.
+Unloading 3849 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 135.2 MB.
+System memory in use after: 135.4 MB.
 
-Unloading 62 unused Assets to reduce memory usage. Loaded Objects now: 4248.
-Total: 3.346900 ms (FindLiveObjects: 0.324100 ms CreateObjectMapping: 0.125700 ms MarkObjects: 2.869300 ms  DeleteObjects: 0.027100 ms)
+Unloading 65 unused Assets to reduce memory usage. Loaded Objects now: 4277.
+Total: 3.298300 ms (FindLiveObjects: 0.406800 ms CreateObjectMapping: 0.108000 ms MarkObjects: 2.750600 ms  DeleteObjects: 0.031800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -374,3 +204,138 @@ AssetImportParameters requested are different than current active one (requested
   custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 80.283986 seconds.
+  path: Assets/Pibrary/UI/Pallet/Primary/PrimaryDark 1.mat
+  artifactKey: Guid(3d6e9f3d3c96c5549b77fa2ca448b79d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pibrary/UI/Pallet/Primary/PrimaryDark 1.mat using Guid(3d6e9f3d3c96c5549b77fa2ca448b79d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '950bab81531d84e8dfe003ad188ed089') in 0.112898 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.204774 seconds.
+  path: Assets/Pibrary/UI/Pallet/Primary/PrimaryLight.mat
+  artifactKey: Guid(3d6e9f3d3c96c5549b77fa2ca448b79d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Pibrary/UI/Pallet/Primary/PrimaryLight.mat using Guid(3d6e9f3d3c96c5549b77fa2ca448b79d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7cebd2ff49f96ee2e812c2fd9230371') in 0.010342 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011014 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\hatin\UnityProjects\pibrary-for-unity-fixed\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\hatin\UnityProjects\pibrary-for-unity-fixed\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.26 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.018 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1018ms)
+		BeginReloadAssembly (111ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (3ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (848ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (351ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (39ms)
+			SetupLoadedEditorAssemblies (263ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (56ms)
+				ProcessInitializeOnLoadAttributes (185ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.52 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3849 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 139.6 MB.
+System memory in use after: 139.8 MB.
+
+Unloading 64 unused Assets to reduce memory usage. Loaded Objects now: 4319.
+Total: 3.548600 ms (FindLiveObjects: 0.360100 ms CreateObjectMapping: 0.101200 ms MarkObjects: 3.045700 ms  DeleteObjects: 0.040200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.012344 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\hatin\UnityProjects\pibrary-for-unity-fixed\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\hatin\UnityProjects\pibrary-for-unity-fixed\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.10 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.014 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1014ms)
+		BeginReloadAssembly (116ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (4ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (840ms)
+			LoadAssemblies (92ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (344ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (264ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (4ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (57ms)
+				ProcessInitializeOnLoadAttributes (187ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (6ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(537395200) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 1.81 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3849 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 139.6 MB.
+System memory in use after: 139.9 MB.
+
+Unloading 64 unused Assets to reduce memory usage. Loaded Objects now: 4321.
+Total: 3.130900 ms (FindLiveObjects: 0.253300 ms CreateObjectMapping: 0.100500 ms MarkObjects: 2.751200 ms  DeleteObjects: 0.025200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:graphics/normal-map-encoding: 01000000000000000000000000000000 -> 02000000000000000000000000000000
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file

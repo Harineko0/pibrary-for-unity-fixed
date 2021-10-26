@@ -224,9 +224,9 @@
      <Compile Include="Assets\Plugins\UniRx\Scripts\Operators\OfType.cs" />
      <Compile Include="Assets\Plugins\UniRx\Scripts\Pair.cs" />
      <Compile Include="Assets\Plugins\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableAnimatorTrigger.cs" />
-     <Compile Include="Assets\Plugins\UniRx\Scripts\Disposables\BooleanDisposable.cs" />
      <Compile Include="Assets\Plugins\UniRx\Scripts\Observable.Conversions.cs" />
      <Compile Include="Assets\Plugins\UniRx\Scripts\Operators\First.cs" />
+     <Compile Include="Assets\Plugins\UniRx\Scripts\Disposables\BooleanDisposable.cs" />
      <Compile Include="Assets\Plugins\UniRx\Scripts\Disposables\ICancelable.cs" />
      <Compile Include="Assets\Plugins\UniRx\Scripts\UnityEngineBridge\Triggers\ObservableLateUpdateTrigger.cs" />
      <Compile Include="Assets\Plugins\UniRx\Scripts\UnityEngineBridge\Diagnostics\LogEntryExtensions.cs" />
@@ -506,6 +506,9 @@
      <Reference Include="log4netPlastic">
      <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
      </Reference>
+     <Reference Include="DOTween">
+     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+     </Reference>
      <Reference Include="Firebase.App">
      <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Firebase/Plugins/Firebase.App.dll</HintPath>
      </Reference>
@@ -527,6 +530,9 @@
      <Reference Include="unityplastic">
      <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
      </Reference>
+     <Reference Include="DOTweenEditor">
+     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+     </Reference>
      <Reference Include="Firebase.TaskExtension">
      <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
      </Reference>
@@ -547,12 +553,6 @@
      </Reference>
      <Reference Include="Firebase.Auth">
      <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
-     </Reference>
-     <Reference Include="DOTweenEditor">
-     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
-     </Reference>
-     <Reference Include="DOTween">
-     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>C:/Program Files/Unity/2021.1.26f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

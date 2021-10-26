@@ -107,6 +107,7 @@
             <e p="InputField" t="Include">
               <e p="BarController.cs" t="Include" />
               <e p="InputFieldController.cs" t="Include" />
+              <e p="PlaceholderController.cs" t="Include" />
             </e>
           </e>
         </e>
