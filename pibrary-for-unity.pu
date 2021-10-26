@@ -1,0 +1,146 @@
+@startuml pibrary-for-unity
+namespace Pibrary {
+    class Constant {
+        {static} + string ROOT_PATH
+        {static} + string getAssetPath(string name)
+    }
+
+    class Pibrary<<Singleton>> {
+        + Pibrary DefaultInstance
+        + IAuthHandler AuthHandler
+        + IDataHandler<UserData> DataHandler
+        + IDataStore<SaveData> DataStore
+        + void Initialize()
+        
+    }
+
+    enum LoadingState {
+        WaitingToLoad
+        Loading
+        Completed
+    }
+}
+
+namespace Pibrary.Config {
+    enum Environment
+    {
+        Development
+        Production
+    }
+
+    interface IConfigLoader {
+        + IObservable<LoadingState> OnStateChanged
+        + PibraryConfig Config
+    }
+
+    class AddressableConfigLoader implements IConfigLoader {
+        - Environment environment
+    }
+
+    class ResourceConfigLoader implements IConfigLoader {
+        - Environment environment
+    }
+
+    class ConfigProvider {
+        {static} - IConfigLoader configLoader
+        {static} + OAuthConfig OAuthConfig
+        {static} + void Initialize()
+    }
+
+    class PibraryConfig {
+        + OAuthConfig OAuthConfig
+        + ContentConfig ContentConfig
+    }
+
+    class OAuthConfig {
+        + string cliendID
+        + string cliendSecret
+    }
+
+    class ContentConfig {
+        + string contentID
+    }
+
+    PibraryConfig <-- IConfigLoader
+    ConfigProvider ..> IConfigLoader
+    PibraryConfig o-- ContentConfig
+    PibraryConfig o-- OAuthConfig
+    Environment <-- AddressableConfigLoader
+    Environment <-- ResourceConfigLoader
+}
+
+namespace Pibrary.Auth {
+    interface IAuthHandler {
+        + IObservable<LoadingState> OnStateChanged 
+        + void CallGoogleSignIn()
+        + void CallEmailSignIn(string email, string password)
+    }
+
+    class FirebaseAuthHandler implements IAuthHandler {
+
+    }
+
+    interface IGoogleAuthHandler {
+        + void getIdToken()
+    }
+    
+    class MobileGoogleAuthHandler implements IGoogleAuthHandler {
+
+    }
+
+    FirebaseAuthHandler o-- IGoogleAuthHandler
+}
+
+namespace Pibrary.Data {
+    class UserData {
+        + List<DocumentReference> accessibleAuthorRef
+        + List<DocumentReference> purchasedContentsRef
+    }
+
+    class SaveData {
+        + boolean purchased
+    }
+
+    interface IDataHandler<T> {
+        + IObservable<LoadingState> OnStateChanged 
+        + IReadOnlyReactiveProperty<T> Data
+        + T FetchUserData(string uid)
+    }
+
+    class FirestoreHandler implements IDataHandler {
+
+    }
+
+    interface IDataStore<T> {
+        + IReadOnlyReactiveProperty<T> SaveData
+        + void Save()
+        + T Load()
+    }
+
+    class SerialDataStore<T> implements IDataStore {
+
+    }
+}
+
+namespace Pibrary.Presenters {
+    class AuthPresenter {
+        - Button googleButton
+        - Button emailButton
+        - Text emailField
+        - Text passwordField
+        - Button submitButton
+    }
+}
+
+Pibrary.Pibrary o-- Pibrary.Auth.IAuthHandler
+Pibrary.Pibrary o-- Pibrary.Data.IDataHandler
+Pibrary.Pibrary o-- Pibrary.Data.IDataStore
+Pibrary.Auth.IAuthHandler <-- Pibrary.Presenters.AuthPresenter
+Pibrary.Data.IDataHandler <-- Pibrary.Presenters.AuthPresenter
+Pibrary.Data.SaveData <-- Pibrary.Pibrary
+Pibrary.Data.UserData <-- Pibrary.Pibrary
+Pibrary.LoadingState <-- Pibrary.Data.IDataHandler
+Pibrary.LoadingState <-- Pibrary.Auth.IAuthHandler
+Pibrary.LoadingState <-- Pibrary.Config.IConfigLoader
+Pibrary.Auth.MobileGoogleAuthHandler --> Pibrary.Config.ConfigProvider : Get cliendID
+@enduml
