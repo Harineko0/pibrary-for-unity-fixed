@@ -1,6 +1,4 @@
 ﻿using Google;
-using Pibrary.Auth;
-using Pibrary.Config;
 using UniRx;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,9 +17,10 @@ namespace Pibrary.Presenters
         
         private void Start()
         {
-            Pibrary.DefaultInstance.Initialize();
-            
-            IAuthHandler authHandler = Pibrary.DefaultInstance.AuthHandler;
+            var pibrary = Pibrary.DefaultInstance;
+            pibrary.Initialize();
+            var authHandler = pibrary.AuthHandler;
+            var dataStore = pibrary.DataStore;
             
             googleButton
                 .OnClickAsObservable()
@@ -42,54 +41,13 @@ namespace Pibrary.Presenters
                 })
                 .AddTo(this);
 
-            authHandler.OnStateChanged
-                .Subscribe(state =>
+            dataStore.SaveData.Subscribe(data =>
+            {
+                if (data.purchased)
                 {
-                    if (state == LoadingState.Loading)
-                    {
-                        Debug.Log("Loading");
-                        log.text = "Loading";
-                    }
-                    if (state == LoadingState.Completed)
-                    {
-                        Debug.Log("Complete");
-                        
-                        log.text = "Complete";
-                    }
-                });
-        }
-        
-        
-        Firebase.Auth.FirebaseAuth auth;
-        Firebase.Auth.FirebaseUser user;
-
-// Handle initialization of the necessary firebase modules:
-        void InitializeFirebase() {
-            Debug.Log("Setting up Firebase Auth");
-            auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
-            auth.StateChanged += AuthStateChanged;
-            AuthStateChanged(this, null);
-        }
-
-// Track state changes of the auth object.
-        void AuthStateChanged(object sender, System.EventArgs eventArgs) {
-            if (auth.CurrentUser != user) {
-                bool signedIn = user != auth.CurrentUser && auth.CurrentUser != null;
-                if (!signedIn && user != null) {
-                    Debug.Log("Signed out " + user.UserId);
-                    log.text = "Sign out";
+                    log.text = "purchased";
                 }
-                user = auth.CurrentUser;
-                if (signedIn) {
-                    Debug.Log("Signed in " + user.UserId);
-                    log.text = "Signed in " + user.UserId;
-                }
-            }
-        }
-
-        void OnDestroy() {
-            auth.StateChanged -= AuthStateChanged;
-            auth = null;
+            });
         }
     }
 }

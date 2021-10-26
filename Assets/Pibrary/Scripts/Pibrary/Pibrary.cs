@@ -38,12 +38,12 @@ namespace Pibrary
             dataHandler = new FirebaseDataHandler();
             auth = FirebaseAuth.DefaultInstance;
             
-            auth.StateChanged += OnAuthStateChanged;
-            OnAuthStateChanged(this, null);
-            DataHandler.UserData.Subscribe(OnDataFetched);
+            auth.StateChanged += FetchUserData;
+            FetchUserData(this, null);
+            DataHandler.UserData.Subscribe(SaveSaveData);
         }
         
-        void OnAuthStateChanged(object sender, System.EventArgs eventArgs) {
+        void FetchUserData(object sender, System.EventArgs eventArgs) {
             if (auth.CurrentUser != user) {
                 bool signedIn = user != auth.CurrentUser && auth.CurrentUser != null;
                 if (!signedIn && user != null) {
@@ -61,7 +61,7 @@ namespace Pibrary
             }
         }
 
-        void OnDataFetched(UserData data)
+        void SaveSaveData(UserData data)
         {
             String contentId = ConfigProvider.ContentConfig.ContentID;
             bool purchased = false;

@@ -8,13 +8,13 @@ namespace Pibrary.Data
 {
     public class SerialDataStore<T> : IDataStore<T> where T : class, new()
     {
-        private Subject<T> saveData;
+        private ReactiveProperty<T> saveData = new ReactiveProperty<T>();
 
-        public IObservable<T> SaveData
+        public IReadOnlyReactiveProperty<T> SaveData
         {
             get
             {
-                if (saveData == null)
+                if (saveData.Value == null)
                 {
                     Load();
                 }
@@ -50,7 +50,7 @@ namespace Pibrary.Data
                 data = new T();
             }
 
-            saveData.OnNext(data);
+            saveData.Value = data;
             return data;
         }
     }

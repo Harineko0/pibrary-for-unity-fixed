@@ -5,7 +5,7 @@ namespace Pibrary.Data
 {
     public interface IDataStore<T>
     {
-        public IObservable<T> SaveData { get; }
+        public IReadOnlyReactiveProperty<T> SaveData { get; }
         public void Save(T data);
     }
 }
