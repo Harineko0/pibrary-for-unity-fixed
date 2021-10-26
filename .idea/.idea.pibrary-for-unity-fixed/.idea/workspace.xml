@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ec6ae97-cde4-44c8-8f3e-fc79ee1c8ab7" name="Default Changelist" comment="[Modify] Modify type of IDataStore.SaveData to IObservable&lt;T&gt;.">
+    <list default="true" id="8ec6ae97-cde4-44c8-8f3e-fc79ee1c8ab7" name="Default Changelist" comment="[Add] Add Debug Code and modify return value of IDataHandler.FetchUserData() to void.">
       <change beforePath="$PROJECT_DIR$/.gitold" beforeDir="false" afterPath="$PROJECT_DIR$/.gitold" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Data/IDataStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Data/IDataStore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Data/SerialDataStore.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Data/SerialDataStore.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Pibrary.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Pibrary.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Presenters/AuthPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Presenters/AuthPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scenes/Auth Scene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scenes/Auth Scene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scenes/AuthScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scenes/AuthScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scenes/AuthScene.unity.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scenes/AuthScene.unity.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +19,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Asynchronous/WebRequestExtensions.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Pibrary/Scripts/Pibrary/Presenters/AuthPresenter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleSignIn/GoogleSignIn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Pibrary/Scripts/Pibrary/Data/IDataStore.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Pibrary/Scripts/Pibrary/Data/SerialDataStore.cs" root0="SKIP_HIGHLIGHTING" />
@@ -34,12 +36,12 @@
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/PibraryInstaller.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Config/AddressableConfigLoader.cs" />
       <option value="$PROJECT_DIR$/.gitignore" />
-      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Data/IDataHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Data/FirebaseDataHandler.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Pibrary.cs" />
-      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Presenters/AuthPresenter.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Data/IDataStore.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Data/SerialDataStore.cs" />
+      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Presenters/AuthPresenter.cs" />
+      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Data/IDataHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Data/FirebaseDataHandler.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2009rJhS2KC7A1qCwb1MTkmlc7x" />
@@ -98,7 +100,7 @@
       <workItem from="1635174399456" duration="37000" />
       <workItem from="1635246514142" duration="359000" />
       <workItem from="1635247938497" duration="101000" />
-      <workItem from="1635248181287" duration="2074000" />
+      <workItem from="1635248181287" duration="2385000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] Add csproj">
       <created>1635246845360</created>
@@ -135,7 +137,21 @@
       <option name="project" value="LOCAL" />
       <updated>1635249824317</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="[Modify] Modify type of IDataStore.SaveData to IReadOnlyReactiveProperty&lt;T&gt;, Add dataStore.SaveData.Subscribe() to AuthPresenter">
+      <created>1635250386920</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1635250386920</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[Add] Add Debug Code and modify return value of IDataHandler.FetchUserData() to void.">
+      <created>1635250544544</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1635250544544</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +176,8 @@
     <MESSAGE value="[Add] Add csproj" />
     <MESSAGE value="[Resolve] Resolve Assembly." />
     <MESSAGE value="[Modify] Modify type of IDataStore.SaveData to IObservable&lt;T&gt;." />
-    <option name="LAST_COMMIT_MESSAGE" value="[Modify] Modify type of IDataStore.SaveData to IObservable&lt;T&gt;." />
+    <MESSAGE value="[Modify] Modify type of IDataStore.SaveData to IReadOnlyReactiveProperty&lt;T&gt;, Add dataStore.SaveData.Subscribe() to AuthPresenter" />
+    <MESSAGE value="[Add] Add Debug Code and modify return value of IDataHandler.FetchUserData() to void." />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add] Add Debug Code and modify return value of IDataHandler.FetchUserData() to void." />
   </component>
 </project>
