@@ -8,7 +8,7 @@ namespace Pibrary {
     class Pibrary<<Singleton>> {
         + Pibrary DefaultInstance
         + IAuthHandler AuthHandler
-        + IDataHandler<UserData> DataHandler
+        + IDataHandler DataHandler
         + IDataStore<SaveData> DataStore
         + void Initialize()
         
@@ -65,8 +65,8 @@ namespace Pibrary.Config {
     ConfigProvider ..> IConfigLoader
     PibraryConfig o-- ContentConfig
     PibraryConfig o-- OAuthConfig
-    Environment <-- AddressableConfigLoader
-    Environment <-- ResourceConfigLoader
+    Environment <-u- AddressableConfigLoader
+    Environment <-u- ResourceConfigLoader
 }
 
 namespace Pibrary.Auth {
@@ -101,10 +101,10 @@ namespace Pibrary.Data {
         + boolean purchased
     }
 
-    interface IDataHandler<T> {
+    interface IDataHandler {
         + IObservable<LoadingState> OnStateChanged 
-        + IReadOnlyReactiveProperty<T> Data
-        + T FetchUserData(string uid)
+        + IReadOnlyReactiveProperty<UserData> Data
+        + UserData FetchUserData(string uid)
     }
 
     class FirestoreHandler implements IDataHandler {
@@ -112,14 +112,15 @@ namespace Pibrary.Data {
     }
 
     interface IDataStore<T> {
-        + IReadOnlyReactiveProperty<T> SaveData
+        + IObservable<T> SaveData
         + void Save()
-        + T Load()
     }
 
     class SerialDataStore<T> implements IDataStore {
 
     }
+
+    UserData <-u- IDataHandler
 }
 
 namespace Pibrary.Presenters {
@@ -138,7 +139,6 @@ Pibrary.Pibrary o-- Pibrary.Data.IDataStore
 Pibrary.Auth.IAuthHandler <-- Pibrary.Presenters.AuthPresenter
 Pibrary.Data.IDataHandler <-- Pibrary.Presenters.AuthPresenter
 Pibrary.Data.SaveData <-- Pibrary.Pibrary
-Pibrary.Data.UserData <-- Pibrary.Pibrary
 Pibrary.LoadingState <-- Pibrary.Data.IDataHandler
 Pibrary.LoadingState <-- Pibrary.Auth.IAuthHandler
 Pibrary.LoadingState <-- Pibrary.Config.IConfigLoader

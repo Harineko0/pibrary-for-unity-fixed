@@ -1,14 +1,16 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using UniRx;
 using UnityEngine;
 
 namespace Pibrary.Data
 {
     public class SerialDataStore<T> : IDataStore<T> where T : class, new()
     {
-        private T saveData;
+        private Subject<T> saveData;
 
-        public T SaveData
+        public IObservable<T> SaveData
         {
             get
             {
@@ -31,7 +33,7 @@ namespace Pibrary.Data
             }
         }
 
-        public T Load()
+        private T Load()
         {
             T data;
             
@@ -48,7 +50,7 @@ namespace Pibrary.Data
                 data = new T();
             }
 
-            saveData = data;
+            saveData.OnNext(data);
             return data;
         }
     }

@@ -40,7 +40,7 @@ namespace Pibrary
             
             auth.StateChanged += OnAuthStateChanged;
             OnAuthStateChanged(this, null);
-            dataHandler.UserData.Subscribe(OnDataFetched);
+            DataHandler.UserData.Subscribe(OnDataFetched);
         }
         
         void OnAuthStateChanged(object sender, System.EventArgs eventArgs) {
@@ -80,7 +80,7 @@ namespace Pibrary
                 purchased = purchased,
             };
             Debug.Log("purchased: " + purchased);
-            dataStore.Save(saveData);
+            DataStore.Save(saveData);
         }
     }
 }
