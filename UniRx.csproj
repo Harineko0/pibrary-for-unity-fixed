@@ -548,6 +548,12 @@
      <Reference Include="Firebase.Auth">
      <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
      </Reference>
+     <Reference Include="DOTweenEditor">
+     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Demigiant/DOTween/Editor/DOTweenEditor.dll</HintPath>
+     </Reference>
+     <Reference Include="DOTween">
+     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+     </Reference>
      <Reference Include="netstandard">
      <HintPath>C:/Program Files/Unity/2021.1.26f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
      </Reference>
