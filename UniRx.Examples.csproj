@@ -625,23 +625,27 @@
      <Reference Include="System.Xml.Serialization">
      <HintPath>C:/Program Files/Unity/2021.1.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
      </Reference>
-     <Reference Include="UnityEngine.TestRunner">
-     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.TestRunner">
-     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEditor.UI">
-     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UI">
-     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="UniRx.csproj">
       <Project>{3692d2ea-a9f4-3ac7-8453-d3b872e33565}</Project>
       <Name>UniRx</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.TestRunner.csproj">
+      <Project>{5f14a742-97e4-700a-9d87-cd105675ad08}</Project>
+      <Name>UnityEngine.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.TestRunner.csproj">
+      <Project>{39fa3725-847e-eabe-64cb-08326d172e6b}</Project>
+      <Name>UnityEditor.TestRunner</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{407501f9-3837-dd8f-d7a8-209153ca3e76}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{ba5ddeda-ca06-5870-c39c-43de8a9c62db}</Project>
+      <Name>UnityEngine.UI</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

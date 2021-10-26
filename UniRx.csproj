@@ -512,9 +512,6 @@
      <Reference Include="Newtonsoft.Json">
      <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
      </Reference>
-     <Reference Include="Firebase.Editor">
-     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Firebase/Editor/Firebase.Editor.dll</HintPath>
-     </Reference>
      <Reference Include="Unity.Plastic.Newtonsoft.Json">
      <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Library/PackageCache/com.unity.collab-proxy@1.13.5/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
      </Reference>
@@ -896,14 +893,16 @@
      <Reference Include="System.Xml.Serialization">
      <HintPath>C:/Program Files/Unity/2021.1.26f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
      </Reference>
-     <Reference Include="UnityEditor.UI">
-     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
-     </Reference>
-     <Reference Include="UnityEngine.UI">
-     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="UnityEditor.UI.csproj">
+      <Project>{407501f9-3837-dd8f-d7a8-209153ca3e76}</Project>
+      <Name>UnityEditor.UI</Name>
+    </ProjectReference>
+    <ProjectReference Include="UnityEngine.UI.csproj">
+      <Project>{ba5ddeda-ca06-5870-c39c-43de8a9c62db}</Project>
+      <Name>UnityEngine.UI</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
