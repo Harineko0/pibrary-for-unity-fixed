@@ -9,6 +9,6 @@ namespace Pibrary.Data
     {
         public IObservable<LoadingState> OnStateChanged { get;  }
         public IReadOnlyReactiveProperty<UserData> UserData { get; }
-        public Task<UserData> FetchUserData(string uid);
+        public void FetchUserData(string uid);
     }
 }

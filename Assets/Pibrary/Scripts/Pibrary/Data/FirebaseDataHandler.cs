@@ -17,8 +17,13 @@ namespace Pibrary.Data
         public IReadOnlyReactiveProperty<UserData> UserData { get { return userData; } }
         
         private FirebaseFirestore db = FirebaseFirestore.DefaultInstance;
+
+        public FirebaseDataHandler()
+        {
+            FetchUserData("XxZgf3Ls3jP06oROfqfJcQdrnZ33");
+        }
         
-        public async Task<UserData> FetchUserData(string uid)
+        public async void FetchUserData(string uid)
         {
             DocumentReference reference = db.Collection("users").Document(uid);
             DocumentSnapshot snapshot = await reference.GetSnapshotAsync();
@@ -46,11 +51,9 @@ namespace Pibrary.Data
                     purchasedContentsRef = purchasedContentsRef,
                 };
                 userData.Value = data;
-                return data;
             }
 
             Debug.LogError("Firestore returns illegal data!");
-            return null;
         }
     }
 }
