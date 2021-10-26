@@ -3,9 +3,10 @@ using Firebase.Firestore;
 
 namespace Pibrary.Data
 {
+    [FirestoreData]
     public class UserData
     {
-        public List<DocumentReference> accessibleAuthorRef;
-        public List<DocumentReference> purchasedContentsRef;
+        [FirestoreProperty] public List<DocumentReference> accessibleAuthorRef { get; set; }
+        [FirestoreProperty] public List<DocumentReference> purchasedContentsRef { get; set; }
     }
 }

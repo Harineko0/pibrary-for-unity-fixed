@@ -1,4 +1,5 @@
 ﻿using System;
+using Firebase;
 using Firebase.Auth;
 using Firebase.Firestore;
 using Pibrary.Auth;
@@ -40,7 +41,25 @@ namespace Pibrary
             
             auth.StateChanged += FetchUserData;
             FetchUserData(this, null);
-            DataHandler.UserData.Subscribe(SaveSaveData);
+            DataHandler.UserData.Where(data => data != null).Subscribe(SaveSaveData);
+            
+            FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
+            {
+                // FirebaseAnalytics.SetAnalyticsCollectionEnabled(true);
+                var dependencyStatus = task.Result;
+                if (dependencyStatus != Firebase.DependencyStatus.Available) {
+                    Debug.LogError(System.String.Format(
+                        "Could not resolve all Firebase dependencies: {0}", dependencyStatus));
+                }
+            });
+
+            # region Debug
+            DataStore.SaveData.Subscribe(data =>
+            {
+                Debug.Log("SaveData.purchased: " + data.purchased);
+            });
+            DataHandler.FetchUserData("XxZgf3Ls3jP06oROfqfJcQdrnZ33");
+            # endregion
         }
         
         void FetchUserData(object sender, System.EventArgs eventArgs) {
@@ -67,7 +86,6 @@ namespace Pibrary
             bool purchased = false;
             foreach (DocumentReference docRef in data.purchasedContentsRef)
             {
-                Debug.Log(docRef.Id);
                 if (contentId == docRef.Id)
                 {
                     purchased = true;
@@ -79,7 +97,7 @@ namespace Pibrary
             {
                 purchased = purchased,
             };
-            Debug.Log("purchased: " + purchased);
+            Debug.Log("Purchased: " + purchased);
             DataStore.Save(saveData);
         }
     }

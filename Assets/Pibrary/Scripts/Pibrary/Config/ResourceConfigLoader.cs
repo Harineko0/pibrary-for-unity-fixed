@@ -29,9 +29,10 @@ namespace Pibrary.Config
             switch (environment)
             {
                 case Environment.Development:
-                    Debug.Log("Load 'Development' conf");
+                    Debug.Log("Load 'Development' config.");
                     return Resources.Load<PibraryConfig>(Constant.getAssetPath("Config/Development"));
                 case Environment.Production:
+                    Debug.Log("Load 'Production' config.");
                     return Resources.Load<PibraryConfig>(Constant.getAssetPath("Config/Production"));
                 default:
                     throw new ArgumentOutOfRangeException();

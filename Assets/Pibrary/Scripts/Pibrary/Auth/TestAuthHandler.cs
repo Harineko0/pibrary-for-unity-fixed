@@ -16,7 +16,7 @@ namespace Pibrary.Auth
             get { return stateSubject; }
         }
 
-        public async void CallGoogleSignIn()
+        public void CallGoogleSignIn()
         {
             if (GoogleSignIn.Configuration == null)
             {
