@@ -16,16 +16,22 @@ namespace Pibrary.UI.Button
     {
         [SerializeField] private RectTransform copyFrom;
         [SerializeField] private CopyConfig copyConfig;
+
+        private bool isPlaying;
         
         private void Start()
         {
+            isPlaying = true;
             // 指定オブジェクトの状態が変化するのを待つ
             Resize();
         }
 
         public async void Resize()
         {
-            await UniTask.WaitUntilValueChanged(copyFrom, x => x.rect.width);
+            if (isPlaying)
+            {
+                await UniTask.WaitUntilValueChanged(copyFrom, x => x.rect.width);
+            }
             RectTransform rect = GetComponent<RectTransform>();
             float width = copyConfig.copyWidth ? copyFrom.rect.width
                 : (copyConfig.square && copyConfig.copyHeight) ? copyFrom.rect.height : rect.rect.width;
