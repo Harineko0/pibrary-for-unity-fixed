@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Pibrary.UI;
+using UnityEngine;
 
 namespace Pibrary.Config
 {
@@ -33,6 +34,11 @@ namespace Pibrary.Config
         public static ContentConfig ContentConfig
         {
             get { return Loader.Config.ContentConfig; }
+        }
+
+        public static ThemeConfig ThemeConfig
+        {
+            get { return Loader.Config.ThemeConfig; }
         }
     }
 }

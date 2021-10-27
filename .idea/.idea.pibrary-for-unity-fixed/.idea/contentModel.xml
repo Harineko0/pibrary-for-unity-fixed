@@ -98,7 +98,12 @@
               <e p="Presenters" t="Include">
                 <e p="AuthPresenter.cs" t="Include" />
               </e>
+              <e p="UI" t="Include">
+                <e p="ColorLoader.cs" t="Include" />
+                <e p="ThemeConfig.cs" t="Include" />
+              </e>
               <e p="Utils" t="Include">
+                <e p="ColorUtil.cs" t="Include" />
                 <e p="SingletonMonoBehavior.cs" t="Include" />
               </e>
             </e>

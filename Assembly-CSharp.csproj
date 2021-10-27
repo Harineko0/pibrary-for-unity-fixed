@@ -76,6 +76,9 @@
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Data\IDataHandler.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Auth\IAuthHandler.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Config\ConfigProvider.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ThemeConfig.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\Utils\ColorUtil.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ColorLoader.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

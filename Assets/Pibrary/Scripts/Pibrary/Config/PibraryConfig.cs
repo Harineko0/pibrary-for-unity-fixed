@@ -1,4 +1,5 @@
 ﻿using System;
+using Pibrary.UI;
 using UnityEngine;
 
 namespace Pibrary.Config
@@ -9,6 +10,7 @@ namespace Pibrary.Config
     {
         [SerializeField] public OAuthConfig OAuthConfig = new OAuthConfig();
         [SerializeField] public ContentConfig ContentConfig = new ContentConfig();
+        [SerializeField] public ThemeConfig ThemeConfig = new ThemeConfig();
     }
     
     [Serializable]

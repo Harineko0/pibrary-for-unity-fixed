@@ -133,6 +133,12 @@ namespace Pibrary.Presenters {
     }
 }
 
+namespace Pibrary.UI {
+    interface IColorLoader {
+        + LoadColor()
+    }
+}
+
 Pibrary.Pibrary o-- Pibrary.Auth.IAuthHandler
 Pibrary.Pibrary o-- Pibrary.Data.IDataHandler
 Pibrary.Pibrary o-- Pibrary.Data.IDataStore
