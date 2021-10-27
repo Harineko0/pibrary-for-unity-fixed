@@ -135,10 +135,10 @@ namespace Pibrary.Presenters {
 
 namespace Pibrary.UI {
     class ThemeParams<T> {
-        + ObjectMaterial<T> primary
-        + ObjectMaterial<T> secondary
-        + TextMaterial<T> text
-        + BackgroundMaterial<T> background
+        + ObjectParams<T> primary
+        + ObjectParams<T> secondary
+        + TextParams<T> text
+        + BackgroundParams<T> background
     }
 
     class ColorLoader {
@@ -152,6 +152,25 @@ namespace Pibrary.UI {
     class ImageColorSetter implements IColorSetter {}
 
     class TMPTextColorSetter implements IColorSetter {}
+
+    class ColorController {
+        - ThemeParams<List<IColorSetter>> setters
+        + void SetParameter()
+    }
+
+    
+    ThemeParams <-- ColorLoader
+    ThemeParams <-- ColorController
+    IColorSetter <-- ColorController
+}
+
+namespace Pibrary.Input {
+    interface IInputManager {
+        + GetMousePosition()
+    }
+
+    class InputManager implements IInputManager {
+    }
 }
 
 Pibrary.Pibrary o-- Pibrary.Auth.IAuthHandler

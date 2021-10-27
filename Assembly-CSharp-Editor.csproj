@@ -347,6 +347,21 @@
      <Reference Include="Firebase.Auth">
      <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
      </Reference>
+     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Rocks">
+     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Lib/Zenject.ReflectionBaking.Mono.Cecil.Rocks.dll</HintPath>
+     </Reference>
+     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Pdb">
+     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Lib/Zenject.ReflectionBaking.Mono.Cecil.Pdb.dll</HintPath>
+     </Reference>
+     <Reference Include="Zenject-usage">
+     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Zenject/Source/Usage/Zenject-usage.dll</HintPath>
+     </Reference>
+     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil">
+     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Lib/Zenject.ReflectionBaking.Mono.Cecil.dll</HintPath>
+     </Reference>
+     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Mdb">
+     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Lib/Zenject.ReflectionBaking.Mono.Cecil.Mdb.dll</HintPath>
+     </Reference>
      <Reference Include="nunit.framework">
      <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
      </Reference>
@@ -815,6 +830,42 @@
     <ProjectReference Include="Unity.VisualScripting.State.csproj">
       <Project>{f2916406-16eb-5f4c-1acc-e2667622adc5}</Project>
       <Name>Unity.VisualScripting.State</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.TextMeshPro.csproj">
+      <Project>{7d9794ef-09dd-9f3f-da6d-e9c59ebb7d85}</Project>
+      <Name>UniTask.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.Addressables.csproj">
+      <Project>{f3d96dfb-27ea-6882-278b-08d486e16c95}</Project>
+      <Name>UniTask.Addressables</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.DOTween.csproj">
+      <Project>{2b63b15a-a962-b20c-6a5d-25f09e2f9bd8}</Project>
+      <Name>UniTask.DOTween</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.Linq.csproj">
+      <Project>{98d37c5d-08fd-1545-ece0-7f0dbba077dc}</Project>
+      <Name>UniTask.Linq</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.csproj">
+      <Project>{d1213208-13db-21de-f8a6-32bb862fb0e6}</Project>
+      <Name>UniTask</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject-Editor.csproj">
+      <Project>{47d2d8e7-e25a-a3e3-6abb-f8fd0cb18449}</Project>
+      <Name>Zenject-Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject-PoolMonitor-Editor.csproj">
+      <Project>{18e6ad8e-98a1-2d01-d36b-30f85ae2fa1a}</Project>
+      <Name>Zenject-PoolMonitor-Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject-ReflectionBaking-Editor.csproj">
+      <Project>{bb5bfc7c-9516-8c17-0700-90f94296f0de}</Project>
+      <Name>Zenject-ReflectionBaking-Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject.csproj">
+      <Project>{5e7822a2-6a14-7e8c-0dad-c09b3c708158}</Project>
+      <Name>Zenject</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
