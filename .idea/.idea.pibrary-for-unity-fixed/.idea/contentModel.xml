@@ -100,13 +100,20 @@
               </e>
               <e p="UI" t="Include">
                 <e p="Button" t="Include">
+                  <e p="ButtonColorController.cs" t="Include" />
                   <e p="ButtonController.cs" t="Include" />
+                  <e p="ShadowController.cs" t="Include" />
                 </e>
                 <e p="ColorController.cs" t="Include" />
                 <e p="ColorLoader.cs" t="Include" />
                 <e p="ColorTypes.cs" t="Include" />
                 <e p="IColorSetter.cs" t="Include" />
                 <e p="ImageColorSetter.cs" t="Include" />
+                <e p="InputField" t="Include">
+                  <e p="BarController.cs" t="Include" />
+                  <e p="InputFieldController.cs" t="Include" />
+                  <e p="PlaceholderController.cs" t="Include" />
+                </e>
                 <e p="ThemeConfig.cs" t="Include" />
                 <e p="ThemeParams.cs" t="Include" />
                 <e p="TMPTextColorSetter.cs" t="Include" />
@@ -115,13 +122,6 @@
                 <e p="ColorUtil.cs" t="Include" />
                 <e p="SingletonMonoBehavior.cs" t="Include" />
               </e>
-            </e>
-          </e>
-          <e p="UI" t="Include">
-            <e p="InputField" t="Include">
-              <e p="BarController.cs" t="Include" />
-              <e p="InputFieldController.cs" t="Include" />
-              <e p="PlaceholderController.cs" t="Include" />
             </e>
           </e>
         </e>

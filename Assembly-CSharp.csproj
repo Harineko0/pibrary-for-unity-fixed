@@ -97,6 +97,8 @@
      <Compile Include="Assets\Shapes2D\Demos\Simple Effect\TapEffect.cs" />
      <Compile Include="Assets\Shapes2D\Scripts\PolyMap.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\Button\ButtonController.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\Button\ShadowController.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\Button\ButtonColorController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Shapes2D\Shaders\Triangle.cginc" />
