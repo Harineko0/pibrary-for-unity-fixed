@@ -15,17 +15,19 @@ namespace Pibrary.UI.InputField
         private RectTransform selectedTransform;
         [SerializeField] private Image selectedHighlightedBar;
 
-        private float transitionSpeed;
-        private Ease ease;
+        private float transitionSpeed = 0.4f;
+        private Ease ease = Ease.OutCubic;
         
         private bool isSelected;
 
+        public void SetParameter(float transitionSpeed, Ease ease)
+        {
+            this.transitionSpeed = transitionSpeed;
+            this.ease = ease;
+        }
+        
         void Start()
         {
-            var controller = GetComponent<InputFieldController>();
-            transitionSpeed = controller.TransitionSpeed;
-            ease = controller.Ease;
-            
             var input = GetComponent<TMP_InputField>();
             var trigger = gameObject.AddComponent<ObservableEventTrigger>();
             selectedTransform = selectedBar.gameObject.GetComponent<RectTransform>();

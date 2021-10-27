@@ -99,8 +99,17 @@
                 <e p="AuthPresenter.cs" t="Include" />
               </e>
               <e p="UI" t="Include">
+                <e p="Button" t="Include">
+                  <e p="ButtonController.cs" t="Include" />
+                </e>
+                <e p="ColorController.cs" t="Include" />
                 <e p="ColorLoader.cs" t="Include" />
+                <e p="ColorTypes.cs" t="Include" />
+                <e p="IColorSetter.cs" t="Include" />
+                <e p="ImageColorSetter.cs" t="Include" />
                 <e p="ThemeConfig.cs" t="Include" />
+                <e p="ThemeParams.cs" t="Include" />
+                <e p="TMPTextColorSetter.cs" t="Include" />
               </e>
               <e p="Utils" t="Include">
                 <e p="ColorUtil.cs" t="Include" />
@@ -410,6 +419,47 @@
                 <e p="ThreadPoolScheduler_UnityWinRT.cs" t="Include" />
               </e>
             </e>
+          </e>
+        </e>
+        <e p="Shapes2D" t="Include">
+          <e p="changelog.txt" t="Include" />
+          <e p="Demos" t="Include">
+            <e p="DragCamera.cs" t="Include" />
+            <e p="Flappy Shapes" t="Include">
+              <e p="Bird.cs" t="Include" />
+              <e p="Game.cs" t="Include" />
+            </e>
+            <e p="InputUtils.cs" t="Include" />
+            <e p="Showcase" t="Include">
+              <e p="PacMan.cs" t="Include" />
+            </e>
+            <e p="Simple Effect" t="Include">
+              <e p="EffectDemo.cs" t="Include" />
+              <e p="TapEffect.cs" t="Include" />
+            </e>
+            <e p="Stress Test" t="Include">
+              <e p="Spawner.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Editor" t="Include">
+            <e p="CustomHandles.cs" t="Include" />
+            <e p="MenuItems.cs" t="Include" />
+            <e p="ShapeEditor.cs" t="Include" />
+          </e>
+          <e p="ReadMe.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="PolyMap.cs" t="Include" />
+            <e p="Shape.cs" t="Include" />
+            <e p="Shapes2DPrefs.cs" t="Include" />
+          </e>
+          <e p="Shaders" t="Include">
+            <e p="Common.cginc" t="Include" />
+            <e p="Ellipse.cginc" t="Include" />
+            <e p="Path.cginc" t="Include" />
+            <e p="Polygon.cginc" t="Include" />
+            <e p="Rectangle.cginc" t="Include" />
+            <e p="Shape.shader" t="Include" />
+            <e p="Triangle.cginc" t="Include" />
           </e>
         </e>
         <e p="SignInSample" t="Include">

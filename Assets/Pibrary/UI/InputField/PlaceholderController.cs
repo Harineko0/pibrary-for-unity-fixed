@@ -14,17 +14,19 @@ namespace Pibrary.UI.InputField
         private TMP_InputField input;
         private GameObject permanentPlaceholder;
         
-        private float transitionSpeed;
-        private Ease ease;
+        private float transitionSpeed = 0.4f;
+        private Ease ease = Ease.OutCubic;
         private float scale = 0.5f;
         private Vector3 moveTo;
+
+        public void SetParameter(float transitionSpeed, Ease ease)
+        {
+            this.transitionSpeed = transitionSpeed;
+            this.ease = ease;
+        }
         
         private void Start()
         {
-            var controller = GetComponent<InputFieldController>();
-            transitionSpeed = controller.TransitionSpeed;
-            ease = controller.Ease;
-            
             var rect = GetComponent<RectTransform>();
             moveTo = new Vector3(-rect.sizeDelta.x * 0.225f, placeholder.fontSize * 1.26f, 0f);
             

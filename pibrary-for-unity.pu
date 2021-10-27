@@ -134,9 +134,24 @@ namespace Pibrary.Presenters {
 }
 
 namespace Pibrary.UI {
-    interface IColorLoader {
-        + LoadColor()
+    class ThemeParams<T> {
+        + ObjectMaterial<T> primary
+        + ObjectMaterial<T> secondary
+        + TextMaterial<T> text
+        + BackgroundMaterial<T> background
     }
+
+    class ColorLoader {
+        + ThemeParams<Material> ThemeMaterials
+    }
+
+    interface IColorSetter {
+        + void SetColor(Material material)
+    }
+
+    class ImageColorSetter implements IColorSetter {}
+
+    class TMPTextColorSetter implements IColorSetter {}
 }
 
 Pibrary.Pibrary o-- Pibrary.Auth.IAuthHandler
