@@ -48,7 +48,7 @@
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Auth\MobileGoogleAuthHandler.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Config\AddressableConfigLoader.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Config\IConfigLoader.cs" />
-     <Compile Include="Assets\Pibrary\UI\InputField\InputFieldController.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\InputField\InputFieldController.cs" />
      <Compile Include="Assets\GoogleSignIn\Impl\NativeFuture.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Utils\SingletonMonoBehavior.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\OAuthHandler.cs" />
@@ -68,10 +68,10 @@
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Presenters\AuthPresenter.cs" />
      <Compile Include="Assets\GoogleSignIn\Future.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Auth\TestAuthHandler.cs" />
-     <Compile Include="Assets\Pibrary\UI\InputField\PlaceholderController.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\InputField\PlaceholderController.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Config\PibraryConfig.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Data\UserData.cs" />
-     <Compile Include="Assets\Pibrary\UI\InputField\BarController.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\InputField\BarController.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Constant.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Data\IDataHandler.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Auth\IAuthHandler.cs" />
