@@ -111,6 +111,9 @@
                   <e p="ButtonEffectController.cs" t="Include" />
                   <e p="SizeController.cs" t="Include" />
                 </e>
+                <e p="CircularProgress" t="Include">
+                  <e p="CircularProgressController.cs" t="Include" />
+                </e>
                 <e p="ColorController.cs" t="Include" />
                 <e p="ColorLoader.cs" t="Include" />
                 <e p="ColorTypes.cs" t="Include" />

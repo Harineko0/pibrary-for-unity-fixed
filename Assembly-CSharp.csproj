@@ -102,6 +102,7 @@
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Input\IInputProvidercs.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Input\UnityInputProvider.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Installers\PibraryInstaller.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\CircularProgress\CircularProgressController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Shapes2D\Shaders\Triangle.cginc" />
