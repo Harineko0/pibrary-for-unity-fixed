@@ -44,7 +44,9 @@
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Auth\IGoogleAuthHandler.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Data\SerialDataStore.cs" />
      <Compile Include="Assets\GoogleSignIn\GoogleSignInStatusCode.cs" />
+     <Compile Include="Assets\Shapes2D\Demos\DragCamera.cs" />
      <Compile Include="Assets\GoogleSignIn\Impl\BaseObject.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\IColorSetter.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Auth\MobileGoogleAuthHandler.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Config\AddressableConfigLoader.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Config\IConfigLoader.cs" />
@@ -54,55 +56,54 @@
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\OAuthHandler.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\PibraryInstaller.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Data\FirebaseDataHandler.cs" />
+     <Compile Include="Assets\Shapes2D\Demos\Flappy Shapes\Bird.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ImageColorSetter.cs" />
      <Compile Include="Assets\GoogleSignIn\GoogleSignInConfiguration.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ThemeParams.cs" />
      <Compile Include="Assets\GoogleSignIn\Impl\SignInHelperObject.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Auth\FirebaseAuthHandler.cs" />
      <Compile Include="Assets\SignInSample\SigninSampleScript.cs" />
+     <Compile Include="Assets\Shapes2D\Demos\InputUtils.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\Copyright\CopyrightController.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\Installers\PibraryInstaller.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\Utils\ColorUtil.cs" />
      <Compile Include="Assets\GoogleSignIn\GoogleSignInUser.cs" />
      <Compile Include="Assets\GoogleSignIn\Impl\GoogleSignInImpl.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\Button\ButtonController.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Data\SaveData.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\Input\IInputProvidercs.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Data\IDataStore.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Config\ResourceConfigLoader.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\Input\UnityInputProvider.cs" />
+     <Compile Include="Assets\Shapes2D\Demos\Simple Effect\TapEffect.cs" />
+     <Compile Include="Assets\Shapes2D\Scripts\Shapes2DPrefs.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Pibrary.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ColorLoader.cs" />
+     <Compile Include="Assets\Shapes2D\Scripts\Shape.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\Button\ButtonEffectController.cs" />
      <Compile Include="Assets\GoogleSignIn\GoogleSignIn.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Presenters\AuthPresenter.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\TMPTextColorSetter.cs" />
      <Compile Include="Assets\GoogleSignIn\Future.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ColorTypes.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Auth\TestAuthHandler.cs" />
+     <Compile Include="Assets\Shapes2D\Demos\Stress Test\Spawner.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\InputField\PlaceholderController.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\Button\SizeController.cs" />
+     <Compile Include="Assets\Shapes2D\Demos\Simple Effect\EffectDemo.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Config\PibraryConfig.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Data\UserData.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ThemeConfig.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\InputField\BarController.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\CircularProgress\CircularProgressController.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Constant.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Data\IDataHandler.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\Auth\IAuthHandler.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\Config\ConfigProvider.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ThemeConfig.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\Utils\ColorUtil.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ColorLoader.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ColorController.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\IColorSetter.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ImageColorSetter.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\TMPTextColorSetter.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ThemeParams.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ColorTypes.cs" />
-     <Compile Include="Assets\Shapes2D\Demos\Stress Test\Spawner.cs" />
-     <Compile Include="Assets\Shapes2D\Demos\Flappy Shapes\Bird.cs" />
-     <Compile Include="Assets\Shapes2D\Demos\Flappy Shapes\Game.cs" />
-     <Compile Include="Assets\Shapes2D\Demos\Simple Effect\EffectDemo.cs" />
-     <Compile Include="Assets\Shapes2D\Demos\DragCamera.cs" />
-     <Compile Include="Assets\Shapes2D\Scripts\Shape.cs" />
-     <Compile Include="Assets\Shapes2D\Demos\InputUtils.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\Auth\IAuthHandler.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Showcase\PacMan.cs" />
-     <Compile Include="Assets\Shapes2D\Scripts\Shapes2DPrefs.cs" />
-     <Compile Include="Assets\Shapes2D\Demos\Simple Effect\TapEffect.cs" />
+     <Compile Include="Assets\Shapes2D\Demos\Flappy Shapes\Game.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\Config\ConfigProvider.cs" />
      <Compile Include="Assets\Shapes2D\Scripts\PolyMap.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\Button\ButtonController.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\Button\SizeController.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\Button\ButtonEffectController.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\Input\IInputProvidercs.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\Input\UnityInputProvider.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\Installers\PibraryInstaller.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\CircularProgress\CircularProgressController.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Shapes2D\Shaders\Triangle.cginc" />
@@ -361,6 +362,9 @@
      <Reference Include="UnityEditor.UnityConnectModule">
      <HintPath>C:/Program Files/Unity/2021.1.26f1/Editor/Data/Managed/UnityEngine/UnityEditor.UnityConnectModule.dll</HintPath>
      </Reference>
+     <Reference Include="Zenject-usage">
+     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Zenject/Source/Usage/Zenject-usage.dll</HintPath>
+     </Reference>
      <Reference Include="DOTween">
      <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
      </Reference>
@@ -370,8 +374,17 @@
      <Reference Include="Newtonsoft.Json">
      <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Library/PackageCache/com.unity.nuget.newtonsoft-json@2.0.0/Runtime/Newtonsoft.Json.dll</HintPath>
      </Reference>
+     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil">
+     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Lib/Zenject.ReflectionBaking.Mono.Cecil.dll</HintPath>
+     </Reference>
      <Reference Include="Firebase.Firestore">
      <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Firebase/Plugins/Firebase.Firestore.dll</HintPath>
+     </Reference>
+     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Pdb">
+     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Lib/Zenject.ReflectionBaking.Mono.Cecil.Pdb.dll</HintPath>
+     </Reference>
+     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Rocks">
+     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Lib/Zenject.ReflectionBaking.Mono.Cecil.Rocks.dll</HintPath>
      </Reference>
      <Reference Include="Firebase.TaskExtension">
      <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Firebase/Plugins/Firebase.TaskExtension.dll</HintPath>
@@ -385,6 +398,9 @@
      <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
      <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
      </Reference>
+     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Mdb">
+     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Lib/Zenject.ReflectionBaking.Mono.Cecil.Mdb.dll</HintPath>
+     </Reference>
      <Reference Include="Firebase.Platform">
      <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Firebase/Plugins/Firebase.Platform.dll</HintPath>
      </Reference>
@@ -393,21 +409,6 @@
      </Reference>
      <Reference Include="Firebase.Auth">
      <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Firebase/Plugins/Firebase.Auth.dll</HintPath>
-     </Reference>
-     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Rocks">
-     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Lib/Zenject.ReflectionBaking.Mono.Cecil.Rocks.dll</HintPath>
-     </Reference>
-     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Pdb">
-     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Lib/Zenject.ReflectionBaking.Mono.Cecil.Pdb.dll</HintPath>
-     </Reference>
-     <Reference Include="Zenject-usage">
-     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Zenject/Source/Usage/Zenject-usage.dll</HintPath>
-     </Reference>
-     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil">
-     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Lib/Zenject.ReflectionBaking.Mono.Cecil.dll</HintPath>
-     </Reference>
-     <Reference Include="Zenject.ReflectionBaking.Mono.Cecil.Mdb">
-     <HintPath>C:/Users/hatin/UnityProjects/pibrary-for-unity-fixed/Assets/Plugins/Zenject/OptionalExtras/ReflectionBaking/Lib/Zenject.ReflectionBaking.Mono.Cecil.Mdb.dll</HintPath>
      </Reference>
      <Reference Include="netstandard">
      <HintPath>C:/Program Files/Unity/2021.1.26f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -804,13 +805,13 @@
       <Project>{3de37dcc-6c85-1dee-e79d-00ce20feb828}</Project>
       <Name>VSSettingsProvider</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.ResourceManager.csproj">
-      <Project>{31bc9a71-14f6-4994-c0da-2ab995c38865}</Project>
-      <Name>Unity.ResourceManager</Name>
+    <ProjectReference Include="UniTask.DOTween.csproj">
+      <Project>{2b63b15a-a962-b20c-6a5d-25f09e2f9bd8}</Project>
+      <Name>UniTask.DOTween</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
-      <Project>{5e8c1e9a-7faa-136c-3d25-ab4b0369d86f}</Project>
-      <Name>Unity.VisualScripting.Flow</Name>
+    <ProjectReference Include="Zenject-Editor.csproj">
+      <Project>{47d2d8e7-e25a-a3e3-6abb-f8fd0cb18449}</Project>
+      <Name>Zenject-Editor</Name>
     </ProjectReference>
     <ProjectReference Include="UnityEditor.UI.csproj">
       <Project>{407501f9-3837-dd8f-d7a8-209153ca3e76}</Project>
@@ -820,6 +821,10 @@
       <Project>{f168529c-4c5d-a28c-d094-f31dac7cc1ba}</Project>
       <Name>Unity.PlasticSCM.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.ResourceManager.csproj">
+      <Project>{31bc9a71-14f6-4994-c0da-2ab995c38865}</Project>
+      <Name>Unity.ResourceManager</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.Rider.Editor.csproj">
       <Project>{56a3a8e9-b1f6-88c5-0f0b-acba009e7939}</Project>
       <Name>Unity.Rider.Editor</Name>
@@ -828,6 +833,18 @@
       <Project>{ba5ddeda-ca06-5870-c39c-43de8a9c62db}</Project>
       <Name>UnityEngine.UI</Name>
     </ProjectReference>
+    <ProjectReference Include="Zenject-PoolMonitor-Editor.csproj">
+      <Project>{18e6ad8e-98a1-2d01-d36b-30f85ae2fa1a}</Project>
+      <Name>Zenject-PoolMonitor-Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.Linq.csproj">
+      <Project>{98d37c5d-08fd-1545-ece0-7f0dbba077dc}</Project>
+      <Name>UniTask.Linq</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.VisualScripting.Flow.csproj">
+      <Project>{5e8c1e9a-7faa-136c-3d25-ab4b0369d86f}</Project>
+      <Name>Unity.VisualScripting.Flow</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.VisualScripting.Core.csproj">
       <Project>{c81858a6-f709-26e0-6449-287bd1fcf4d8}</Project>
       <Name>Unity.VisualScripting.Core</Name>
@@ -835,6 +852,18 @@
     <ProjectReference Include="UniRx.csproj">
       <Project>{3692d2ea-a9f4-3ac7-8453-d3b872e33565}</Project>
       <Name>UniRx</Name>
+    </ProjectReference>
+    <ProjectReference Include="UniTask.TextMeshPro.csproj">
+      <Project>{7d9794ef-09dd-9f3f-da6d-e9c59ebb7d85}</Project>
+      <Name>UniTask.TextMeshPro</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject-ReflectionBaking-Editor.csproj">
+      <Project>{bb5bfc7c-9516-8c17-0700-90f94296f0de}</Project>
+      <Name>Zenject-ReflectionBaking-Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Zenject.csproj">
+      <Project>{5e7822a2-6a14-7e8c-0dad-c09b3c708158}</Project>
+      <Name>Zenject</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Mobile.AndroidLogcat.Editor.csproj">
       <Project>{22588987-8b20-c1bd-6d1c-64862be08775}</Project>
@@ -856,45 +885,17 @@
       <Project>{c8ebfe18-6f99-7c07-fef0-1ba6cc9c6f0e}</Project>
       <Name>Unity.ScriptableBuildPipeline.Editor</Name>
     </ProjectReference>
-    <ProjectReference Include="Unity.VisualScripting.State.csproj">
-      <Project>{f2916406-16eb-5f4c-1acc-e2667622adc5}</Project>
-      <Name>Unity.VisualScripting.State</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniTask.TextMeshPro.csproj">
-      <Project>{7d9794ef-09dd-9f3f-da6d-e9c59ebb7d85}</Project>
-      <Name>UniTask.TextMeshPro</Name>
+    <ProjectReference Include="UniTask.csproj">
+      <Project>{d1213208-13db-21de-f8a6-32bb862fb0e6}</Project>
+      <Name>UniTask</Name>
     </ProjectReference>
     <ProjectReference Include="UniTask.Addressables.csproj">
       <Project>{f3d96dfb-27ea-6882-278b-08d486e16c95}</Project>
       <Name>UniTask.Addressables</Name>
     </ProjectReference>
-    <ProjectReference Include="UniTask.DOTween.csproj">
-      <Project>{2b63b15a-a962-b20c-6a5d-25f09e2f9bd8}</Project>
-      <Name>UniTask.DOTween</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniTask.Linq.csproj">
-      <Project>{98d37c5d-08fd-1545-ece0-7f0dbba077dc}</Project>
-      <Name>UniTask.Linq</Name>
-    </ProjectReference>
-    <ProjectReference Include="UniTask.csproj">
-      <Project>{d1213208-13db-21de-f8a6-32bb862fb0e6}</Project>
-      <Name>UniTask</Name>
-    </ProjectReference>
-    <ProjectReference Include="Zenject-Editor.csproj">
-      <Project>{47d2d8e7-e25a-a3e3-6abb-f8fd0cb18449}</Project>
-      <Name>Zenject-Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Zenject-PoolMonitor-Editor.csproj">
-      <Project>{18e6ad8e-98a1-2d01-d36b-30f85ae2fa1a}</Project>
-      <Name>Zenject-PoolMonitor-Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Zenject-ReflectionBaking-Editor.csproj">
-      <Project>{bb5bfc7c-9516-8c17-0700-90f94296f0de}</Project>
-      <Name>Zenject-ReflectionBaking-Editor</Name>
-    </ProjectReference>
-    <ProjectReference Include="Zenject.csproj">
-      <Project>{5e7822a2-6a14-7e8c-0dad-c09b3c708158}</Project>
-      <Name>Zenject</Name>
+    <ProjectReference Include="Unity.VisualScripting.State.csproj">
+      <Project>{f2916406-16eb-5f4c-1acc-e2667622adc5}</Project>
+      <Name>Unity.VisualScripting.State</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

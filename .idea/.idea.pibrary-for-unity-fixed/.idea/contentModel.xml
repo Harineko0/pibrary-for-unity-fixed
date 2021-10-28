@@ -117,6 +117,9 @@
                 <e p="ColorController.cs" t="Include" />
                 <e p="ColorLoader.cs" t="Include" />
                 <e p="ColorTypes.cs" t="Include" />
+                <e p="Copyright" t="Include">
+                  <e p="CopyrightController.cs" t="Include" />
+                </e>
                 <e p="IColorSetter.cs" t="Include" />
                 <e p="ImageColorSetter.cs" t="Include" />
                 <e p="InputField" t="Include">

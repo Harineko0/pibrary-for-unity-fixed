@@ -12,8 +12,6 @@ namespace Pibrary.Presenters
         [SerializeField] private Button emailButton;
         [SerializeField] private InputField emailField;
         [SerializeField] private InputField passwordField;
-        [SerializeField] private Button signOutButton;
-        [SerializeField] private Text log;
         
         private void Start()
         {
@@ -31,23 +29,6 @@ namespace Pibrary.Presenters
                 .OnClickAsObservable()
                 .Subscribe(_ => authHandler.CallEmailSignIn(emailField.text, passwordField.text))
                 .AddTo(this);
-            
-            signOutButton
-                .OnClickAsObservable()
-                .Subscribe(_ =>
-                {
-                    log.text = "Sign Out";
-                    GoogleSignIn.DefaultInstance.SignOut();
-                })
-                .AddTo(this);
-
-            dataStore.SaveData.Subscribe(data =>
-            {
-                if (data.purchased)
-                {
-                    log.text = "purchased";
-                }
-            });
         }
     }
 }
