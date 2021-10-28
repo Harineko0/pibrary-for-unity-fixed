@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading.Tasks;
+using Firebase.Auth;
 using Pibrary.Config;
 
 namespace Pibrary.Auth
@@ -6,7 +8,7 @@ namespace Pibrary.Auth
     public interface IAuthHandler
     {
         public IObservable<LoadingState> OnStateChanged { get; }
-        public void CallGoogleSignIn();
-        public void CallEmailSignIn(string email, string password);
+        public Task<FirebaseUser> CallGoogleSignIn();
+        public Task<FirebaseUser> CallEmailSignIn(string email, string password);
     }
 }

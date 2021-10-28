@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Firebase.Auth;
 using Google;
 using Pibrary.Config;
 using UniRx;
@@ -16,7 +17,7 @@ namespace Pibrary.Auth
             get { return stateSubject; }
         }
 
-        public void CallGoogleSignIn()
+        public Task<FirebaseUser> CallGoogleSignIn()
         {
             if (GoogleSignIn.Configuration == null)
             {
@@ -41,12 +42,14 @@ namespace Pibrary.Auth
                     // Credential credential = Firebase.Auth.GoogleAuthProvider.GetCredential(((Task<GoogleSignInUser>)task).Result.IdToken, null);
                 }
             });
+
+            return null;
         }
 
-        public void CallEmailSignIn(string email, string password)
+        public Task<FirebaseUser> CallEmailSignIn(string email, string password)
         {
             stateSubject.OnNext(LoadingState.Loading);
-            
+            return null;
         }
     }
 }

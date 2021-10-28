@@ -109,7 +109,13 @@
               <e p="Presenters" t="Include">
                 <e p="AuthPresenter.cs" t="Include" />
               </e>
+              <e p="Regex" t="Include">
+                <e p="RegexUtilities.cs" t="Include" />
+              </e>
               <e p="UI" t="Include">
+                <e p="Alert" t="Include">
+                  <e p="AlertController.cs" t="Include" />
+                </e>
                 <e p="Button" t="Include">
                   <e p="ButtonController.cs" t="Include" />
                   <e p="ButtonEffectController.cs" t="Include" />
@@ -136,6 +142,8 @@
                   <e p="InputFieldController.cs" t="Include" />
                   <e p="PlaceholderController.cs" t="Include" />
                 </e>
+                <e p="ScaleCopy.cs" t="Include" />
+                <e p="SizeAdjuster.cs" t="Include" />
                 <e p="ThemeConfig.cs" t="Include" />
                 <e p="ThemeParams.cs" t="Include" />
               </e>

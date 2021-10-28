@@ -1,6 +1,8 @@
 ﻿using System;
+using Pibrary.UI.Alert;
 using Pibrary.Utils;
 using UnityEngine;
+using Object = System.Object;
 
 namespace Pibrary.UI
 {
@@ -21,8 +23,44 @@ namespace Pibrary.UI
             dark = ColorUtil.GetColor("#4ba3c7"),
             contrastText = ColorUtil.GetColor("#fff"),
         };
+        public ObjectColor error = new ObjectColor
+        {
+            main = ColorUtil.GetColor("#f44336"),
+            light = ColorUtil.GetColor("#e57373"),
+            dark = ColorUtil.GetColor("#d32f2f"),
+            contrastText = ColorUtil.GetColor("#fff"),
+        };
+        public ObjectColor warning = new ObjectColor
+        {
+            main = ColorUtil.GetColor("#ffa726"),
+            light = ColorUtil.GetColor("#ffb74d"),
+            dark = ColorUtil.GetColor("#f57c00"),
+            contrastText = ColorUtil.GetColor("#fff"),
+        };
+        public ObjectColor success = new ObjectColor
+        {
+            main = ColorUtil.GetColor("#66bb6a"),
+            light = ColorUtil.GetColor("#81c784"),
+            dark = ColorUtil.GetColor("#388e3c"),
+            contrastText = ColorUtil.GetColor("#fff"),
+        };
         public TextColor text;
         public BackgroundColor background;
+
+        public ObjectColor GetAlertColor(AlertType type)
+        {
+            switch (type)
+            {
+                case AlertType.error:
+                    return error;
+                case AlertType.warning:
+                    return warning;
+                case AlertType.success:
+                    return success;
+            }
+
+            return primary;
+        }
     }
 
     [Serializable]

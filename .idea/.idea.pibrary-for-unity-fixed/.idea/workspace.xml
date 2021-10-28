@@ -1,45 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ec6ae97-cde4-44c8-8f3e-fc79ee1c8ab7" name="Default Changelist" comment="[Refactor] Move UI prefabs.">
-      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/PiMaterial.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/PiMaterial/IMaterialManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/PiMaterial/IMaterialManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/PiMaterial/UnityMaterialManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/PiMaterial/UnityMaterialManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ColorSetters.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ColorSetters/ShapeColorSetter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ColorSetters/ShapeColorSetter.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ColorSetters/TextColorSetter.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ColorSetters/TextColorSetter.cs.meta" afterDir="false" />
+    <list default="true" id="8ec6ae97-cde4-44c8-8f3e-fc79ee1c8ab7" name="Default Changelist" comment="[Add] Add Auth Screen.">
+      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Regex.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Regex/RegexUtilities.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Regex/RegexUtilities.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/Alert.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/Alert/AlertController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/Alert/AlertController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ScaleCopy.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ScaleCopy.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/SizeAdjuster.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/SizeAdjuster.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitold" beforeDir="false" afterPath="$PROJECT_DIR$/.gitold" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.pibrary-for-unity-fixed/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.pibrary-for-unity-fixed/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.pibrary-for-unity-fixed/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.pibrary-for-unity-fixed/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assembly-CSharp.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Assembly-CSharp.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scenes/AuthScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scenes/AuthScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Auth/MobileGoogleAuthHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Auth/MobileGoogleAuthHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Installers/PibraryInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Installers/PibraryInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/Button/ButtonEffectController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/Button/ButtonEffectController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ColorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ColorController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/IColorSetter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ColorSetters/IColorSetter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/IColorSetter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ColorSetters/IColorSetter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ImageColorSetter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ColorSetters/ImageColorSetter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ImageColorSetter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ColorSetters/ImageColorSetter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/InputField/BarController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/InputField/BarController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/TMPTextColorSetter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ColorSetters/TMPTextColorSetter.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/TMPTextColorSetter.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ColorSetters/TMPTextColorSetter.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ThemeParams.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ThemeParams.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/UI/Prefabs/molecules/Button.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/UI/Prefabs/molecules/Button.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/UI/Prefabs/molecules/InputField.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/UI/Prefabs/molecules/InputField.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/UI/Prefabs/molecules/Paper.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/UI/Prefabs/molecules/Paper.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0-prev.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/AssetImportWorker0.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe10.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe10.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe11.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe11.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe7.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe8.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe8.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe9.log" beforeDir="false" afterPath="$PROJECT_DIR$/Logs/shadercompiler-UnityShaderCompiler.exe9.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pibrary-for-unity.pu" beforeDir="false" afterPath="$PROJECT_DIR$/pibrary-for-unity.pu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Auth/FirebaseAuthHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Auth/FirebaseAuthHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Auth/IAuthHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Auth/IAuthHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Auth/TestAuthHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Auth/TestAuthHandler.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Presenters/AuthPresenter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Presenters/AuthPresenter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ThemeConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ThemeConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pibrary/UI/Prefabs/molecules/Logo.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pibrary/UI/Prefabs/molecules/Logo.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pibrary/Config/Development.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pibrary/Config/Development.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Pibrary/Config/Development.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Pibrary/Config/Development.asset.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +34,19 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Plugins/UniRx/Scripts/Asynchronous/WebRequestExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GoogleSignIn/GoogleSignIn.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ColorController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F2625FD8-44AA-4DD5-B6A3-882F24F14D79/5d/3b617b39/Task.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ThemeParams.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/Button/ButtonEffectController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Installers/PibraryInstaller.cs" root0="FORCE_HIGHLIGHTING" />
@@ -65,20 +59,13 @@
     <setting file="file://$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ColorSetters/TMPTextColorSetter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/InputField/BarController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/Button/SizeController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Regex/RegexUtilities.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Constant.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/F2625FD8-44AA-4DD5-B6A3-882F24F14D79/14/a15a7b94/AggregateException.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/CircularProgress/CircularProgressController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/PibraryInstaller.cs" />
-      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Data/IDataStore.cs" />
-      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Data/SerialDataStore.cs" />
-      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Data/IDataHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Auth/TestAuthHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Data/UserData.cs" />
-      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Config/ResourceConfigLoader.cs" />
-      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Data/FirebaseDataHandler.cs" />
-      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Pibrary.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/UIConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Utils/ColorUtil.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Config/PibraryConfig.cs" />
@@ -88,7 +75,6 @@
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Config/ConfigProvider.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/UI/InputField/PlaceholderController.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/UI/InputField/BarController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ThemeConfig.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/IColorSetter.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/TMPTextColorSetter.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ColorTypes.cs" />
@@ -107,7 +93,6 @@
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/Copyright/CopyrightController.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/Button/SizeController.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/Button/ButtonController.cs" />
-      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Presenters/AuthPresenter.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ImageColorSetter.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Material/IMaterialManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/PiMaterial/IMaterialManager.cs" />
@@ -121,6 +106,17 @@
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ColorSetters/TextColorSetter.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/InputField/BarController.cs" />
       <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ColorController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Regax/RegaxUtilities.cs" />
+      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Regex/RegexUtilities.cs" />
+      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/Alert/AlertController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/SizeAbjuster.cs" />
+      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/SizeAdjuster.cs" />
+      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Auth/IAuthHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Auth/TestAuthHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Auth/FirebaseAuthHandler.cs" />
+      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ThemeConfig.cs" />
+      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/UI/ScaleCopy.cs" />
+      <option value="$PROJECT_DIR$/Assets/Pibrary/Scripts/Pibrary/Presenters/AuthPresenter.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2009rJhS2KC7A1qCwb1MTkmlc7x" />
@@ -181,7 +177,7 @@
       <workItem from="1635247938497" duration="101000" />
       <workItem from="1635248181287" duration="15849000" />
       <workItem from="1635324874070" duration="25478000" />
-      <workItem from="1635411866006" duration="7549000" />
+      <workItem from="1635411866006" duration="13710000" />
     </task>
     <task id="LOCAL-00001" summary="[Add] Add csproj">
       <created>1635246845360</created>
@@ -323,7 +319,14 @@
       <option name="project" value="LOCAL" />
       <updated>1635413599123</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="[Add] Add Auth Screen.">
+      <created>1635419644395</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1635419644395</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,6 +366,7 @@
     <MESSAGE value="[Fix] Fix SizeController to resize in editor." />
     <MESSAGE value="[Refactor] Move UI prefabs." />
     <MESSAGE value="[Add] Add pibrary logo." />
-    <option name="LAST_COMMIT_MESSAGE" value="[Add] Add pibrary logo." />
+    <MESSAGE value="[Add] Add Auth Screen." />
+    <option name="LAST_COMMIT_MESSAGE" value="[Add] Add Auth Screen." />
   </component>
 </project>

@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Firebase.Auth;
 using Pibrary.Config;
+using Pibrary.Regex;
 using UniRx;
 using UnityEngine;
 
@@ -16,50 +18,54 @@ namespace Pibrary.Auth
         
         private IGoogleAuthHandler googleAuth = new MobileGoogleAuthHandler();
 
-        private Firebase.Auth.FirebaseAuth auth = Firebase.Auth.FirebaseAuth.DefaultInstance;
+        private FirebaseAuth auth = FirebaseAuth.DefaultInstance;
 
-        public async void CallGoogleSignIn()
+        public async Task<FirebaseUser> CallGoogleSignIn()
         {
             stateSubject.OnNext(LoadingState.Loading);
 
             string idToken = await googleAuth.getIdToken();
-            Firebase.Auth.Credential credential = Firebase.Auth.GoogleAuthProvider.GetCredential(idToken, null);
-            Task<Firebase.Auth.FirebaseUser> signInTask = auth.SignInWithCredentialAsync(credential);
-            await SignIn(signInTask);
+            Credential credential = GoogleAuthProvider.GetCredential(idToken, null);
+            Task<FirebaseUser> signInTask = auth.SignInWithCredentialAsync(credential);
+            var user = await SignIn(signInTask);
             
             stateSubject.OnNext(LoadingState.Completed);
+            return user;
         }
 
-        public async void CallEmailSignIn(string email, string password)
+        public async Task<FirebaseUser> CallEmailSignIn(string email, string password)
         {
             stateSubject.OnNext(LoadingState.Loading);
 
-            if (!String.IsNullOrEmpty(email) && !String.IsNullOrEmpty(password))
+            if (!String.IsNullOrEmpty(email) && !String.IsNullOrEmpty(password) && RegexUtilities.IsValidEmail(email))
             {
                 var signInTask = auth.SignInWithEmailAndPasswordAsync(email, password);
-                await SignIn(signInTask);
+                var user = await SignIn(signInTask);
 
-                stateSubject.OnNext(LoadingState.Completed);
+                return user;
             }
+
+            return null;
         }
 
-        private async Task SignIn(Task<Firebase.Auth.FirebaseUser> signInTask)
+        private async Task<FirebaseUser> SignIn(Task<Firebase.Auth.FirebaseUser> signInTask)
         {
             await signInTask;
             
             if (signInTask.IsCanceled)
             {
                 Debug.LogError("SignInWithCredentialAsync was canceled.");
-                return;
+                return null;
             }
             if (signInTask.IsFaulted) {
                 Debug.LogError("SignInWithCredentialAsync encountered an error: " + signInTask.Exception);
-                return;
+                return null;
             }
             
             Firebase.Auth.FirebaseUser newUser = signInTask.Result;
             Debug.LogFormat("User signed in successfully: {0} ({1})",
                 newUser.DisplayName, newUser.UserId);
+            return newUser;
         }
     }
 }
