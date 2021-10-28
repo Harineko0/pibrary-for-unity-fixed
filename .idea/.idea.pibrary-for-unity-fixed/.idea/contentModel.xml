@@ -146,6 +146,9 @@
                 <e p="SizeAdjuster.cs" t="Include" />
                 <e p="ThemeConfig.cs" t="Include" />
                 <e p="ThemeParams.cs" t="Include" />
+                <e p="Veil" t="Include">
+                  <e p="VeilController.cs" t="Include" />
+                </e>
               </e>
               <e p="Utils" t="Include">
                 <e p="ColorUtil.cs" t="Include" />

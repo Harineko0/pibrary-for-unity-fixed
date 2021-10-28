@@ -8,7 +8,7 @@ namespace Pibrary.UI
         private void Start()
         {
             var rect = GetComponent<RectTransform>();
-            float rate = Screen.height * 0.00092f; // divides 1080
+            float rate = Screen.height * 0.001f; // divides 1080
             if (rate < 1)
             {
                 rect.localScale = new Vector3(rate, rate, rate);

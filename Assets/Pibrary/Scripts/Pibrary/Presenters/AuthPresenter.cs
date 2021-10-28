@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Threading.Tasks;
+using Firebase.Auth;
 using Pibrary.Auth;
 using Pibrary.Data;
 using Pibrary.Regex;
@@ -16,6 +18,7 @@ namespace Pibrary.Presenters
         [SerializeField] private Button emailButton;
         [SerializeField] private TMP_InputField emailField;
         [SerializeField] private TMP_InputField passwordField;
+        [SerializeField] private GameObject loadingScreen;
 
         [SerializeField] private AlertController alert;
 
@@ -42,9 +45,14 @@ namespace Pibrary.Presenters
                 .Where(_ => loading.Value == false)
                 .Subscribe(OnEmailAuth)
                 .AddTo(this);
+
+            loading.Subscribe(loading =>
+            {
+                loadingScreen.SetActive(loading);
+            });
         }
 
-        private async void OnEmailAuth(Unit unit)
+        private void OnEmailAuth(Unit unit)
         {
             loading.Value = true;
             
@@ -54,37 +62,46 @@ namespace Pibrary.Presenters
             if (String.IsNullOrEmpty(email))
             {
                 alert.Alert("メールアドレスを入力してください", AlertType.warning);
+                loading.Value = false;
             }
             else if (!RegexUtilities.IsValidEmail(email))
             {
                 alert.Alert("メールアドレスが無効です", AlertType.warning);
+                loading.Value = false;
             }
             else if (String.IsNullOrEmpty(password))
             {
                 alert.Alert("パスワードを入力してください", AlertType.warning);
+                loading.Value = false;
             }
             else
             {
-                loading.Value = false;
-                var user = await authHandler.CallEmailSignIn(email, password);
-
-                if (user == null)
-                {
-                    alert.Alert("ログインに失敗しました", AlertType.error);
-                }
+                var task = authHandler.CallEmailSignIn(email, password);
+                OnAuthTask(task);
             }
         }
 
-        private async void OnGoogleAuth(Unit unit)
+        private void OnGoogleAuth(Unit unit)
         {
             loading.Value = true;
             
-            var user = await authHandler.CallGoogleSignIn();
+            var task = authHandler.CallGoogleSignIn();
+            OnAuthTask(task);
+        }
+
+        private async void OnAuthTask(Task<FirebaseUser> task)
+        {
+            var user = await task;
 
             if (user == null)
             {
                 alert.Alert("ログインに失敗しました", AlertType.error);
+                return;
             }
+            
+            alert.Alert("ようこそ、" + user.DisplayName + "さん", AlertType.success);
+
+            loading.Value = false;
         }
     }
 }

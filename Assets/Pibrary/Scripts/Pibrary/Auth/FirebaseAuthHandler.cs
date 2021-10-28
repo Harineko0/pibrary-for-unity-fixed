@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
+using Firebase;
 using Firebase.Auth;
 using Pibrary.Config;
 using Pibrary.Regex;
@@ -20,13 +22,22 @@ namespace Pibrary.Auth
 
         private FirebaseAuth auth = FirebaseAuth.DefaultInstance;
 
+        private bool isMobile = Application.platform == RuntimePlatform.IPhonePlayer ||
+                                Application.platform == RuntimePlatform.Android;
+        
         public async Task<FirebaseUser> CallGoogleSignIn()
         {
+            if (!isMobile)
+            {
+                return null;
+            }
+
             stateSubject.OnNext(LoadingState.Loading);
 
             string idToken = await googleAuth.getIdToken();
             Credential credential = GoogleAuthProvider.GetCredential(idToken, null);
             Task<FirebaseUser> signInTask = auth.SignInWithCredentialAsync(credential);
+
             var user = await SignIn(signInTask);
             
             stateSubject.OnNext(LoadingState.Completed);
@@ -48,24 +59,19 @@ namespace Pibrary.Auth
             return null;
         }
 
-        private async Task<FirebaseUser> SignIn(Task<Firebase.Auth.FirebaseUser> signInTask)
+        private async Task<FirebaseUser> SignIn(Task<FirebaseUser> signInTask)
         {
-            await signInTask;
-            
-            if (signInTask.IsCanceled)
+            try
             {
-                Debug.LogError("SignInWithCredentialAsync was canceled.");
+                FirebaseUser newUser = await signInTask;
+                Debug.LogFormat("User signed in successfully: {0} ({1})",
+                    newUser.DisplayName, newUser.UserId);
+                return newUser;
+            }
+            catch
+            {
                 return null;
             }
-            if (signInTask.IsFaulted) {
-                Debug.LogError("SignInWithCredentialAsync encountered an error: " + signInTask.Exception);
-                return null;
-            }
-            
-            Firebase.Auth.FirebaseUser newUser = signInTask.Result;
-            Debug.LogFormat("User signed in successfully: {0} ({1})",
-                newUser.DisplayName, newUser.UserId);
-            return newUser;
         }
     }
 }
