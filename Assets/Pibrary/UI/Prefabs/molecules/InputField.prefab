@@ -396,8 +396,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -544,8 +544,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 28
-  m_fontSizeBase: 28
+  m_fontSize: 24
+  m_fontSizeBase: 24
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -898,7 +898,7 @@ MonoBehaviour:
   m_HideSoftKeyboard: 0
   m_CharacterValidation: 0
   m_RegexValue: 
-  m_GlobalPointSize: 28
+  m_GlobalPointSize: 24
   m_CharacterLimit: 0
   m_OnEndEdit:
     m_PersistentCalls:
@@ -1009,6 +1009,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1a9f5978e3f4586a5b34ad4c75a9c12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enableOverrideColor: 0
+  overrideColor:
+    main: {r: 0, g: 0, b: 0, a: 0}
+    light: {r: 0, g: 0, b: 0, a: 0}
+    dark: {r: 0, g: 0, b: 0, a: 0}
+    contrastText: {r: 0, g: 0, b: 0, a: 0}
   setters:
     Object:
       main:

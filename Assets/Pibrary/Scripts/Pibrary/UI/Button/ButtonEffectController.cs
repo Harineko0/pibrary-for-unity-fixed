@@ -36,20 +36,30 @@ namespace Pibrary.UI.Button
             var image = GetComponent<Image>();
             var button = GetComponent<UnityEngine.UI.Button>();
             var trigger = parent.AddComponent<ObservableEventTrigger>();
+            var colorController = parent.GetComponent<ColorController>();
             
             var clickEffectRect = clickEffect.GetComponent<RectTransform>();
             var clickEffectCanvas = clickEffect.GetComponent<CanvasGroup>();
-            
-            var colorLoader = ColorLoader.Instance;
-            var colors = colorLoader.ThemeMaterial.GetObjectParams(type);
-            
-            image.color = colors.main.color;
+
+            ObjectColor colors;
+
+            if (colorController.EnableOverrideColor)
+            {
+                colors = colorController.OverrideColor;
+            }
+            else
+            {
+                var colorLoader = ColorLoader.Instance;
+                colors = ThemeParamFactory.convertObjectColor(colorLoader.ThemeMaterial.GetObjectParams(type));
+            }
+
+            image.color = colors.main;
             
             trigger
                 .OnPointerEnterAsObservable()
                 .Subscribe(_ =>
                 {
-                    image.DOColor(colors.dark.color, transitionSpeed);
+                    image.DOColor(colors.dark, transitionSpeed);
                 })
                 .AddTo(this);
 
@@ -57,7 +67,7 @@ namespace Pibrary.UI.Button
                 .OnPointerExitAsObservable()
                 .Subscribe(_ =>
                 {
-                    image.DOColor(colors.main.color, transitionSpeed);
+                    image.DOColor(colors.main, transitionSpeed);
                 })
                 .AddTo(this);
 

@@ -87,6 +87,8 @@ namespace Pibrary.UI.InputField
         void OnEndEdit(string text)
         {
             isSelected = false;
+            normalBar.DOFade(endValue: 1f, duration: transitionSpeed).SetEase(ease);
+            highlightedBar.DOFade(endValue: 0f, duration: transitionSpeed).SetEase(ease);
             selectedTransform.DOScale(new Vector3(0f, 1f, 1f), transitionSpeed).SetEase(ease);
             selectedHighlightedBar.DOFade(endValue: 0f, duration: transitionSpeed).SetEase(ease);
         }

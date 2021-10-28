@@ -44,9 +44,10 @@
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Auth\IGoogleAuthHandler.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Data\SerialDataStore.cs" />
      <Compile Include="Assets\GoogleSignIn\GoogleSignInStatusCode.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ColorSetters\TextColorSetter.cs" />
      <Compile Include="Assets\Shapes2D\Demos\DragCamera.cs" />
      <Compile Include="Assets\GoogleSignIn\Impl\BaseObject.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\IColorSetter.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ColorSetters\IColorSetter.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Auth\MobileGoogleAuthHandler.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Config\AddressableConfigLoader.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Config\IConfigLoader.cs" />
@@ -57,7 +58,7 @@
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\PibraryInstaller.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Data\FirebaseDataHandler.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Flappy Shapes\Bird.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ImageColorSetter.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ColorSetters\ImageColorSetter.cs" />
      <Compile Include="Assets\GoogleSignIn\GoogleSignInConfiguration.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ThemeParams.cs" />
      <Compile Include="Assets\GoogleSignIn\Impl\SignInHelperObject.cs" />
@@ -73,6 +74,7 @@
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Data\SaveData.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Input\IInputProvidercs.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Data\IDataStore.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\PiMaterial\UnityMaterialManager.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Config\ResourceConfigLoader.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Input\UnityInputProvider.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Simple Effect\TapEffect.cs" />
@@ -83,10 +85,12 @@
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\Button\ButtonEffectController.cs" />
      <Compile Include="Assets\GoogleSignIn\GoogleSignIn.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Presenters\AuthPresenter.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\TMPTextColorSetter.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ColorSetters\TMPTextColorSetter.cs" />
      <Compile Include="Assets\GoogleSignIn\Future.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ColorTypes.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\PiMaterial\IMaterialManager.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Auth\TestAuthHandler.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ColorSetters\ShapeColorSetter.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Stress Test\Spawner.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\InputField\PlaceholderController.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\Button\SizeController.cs" />

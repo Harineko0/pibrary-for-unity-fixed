@@ -165,11 +165,21 @@ namespace Pibrary.UI {
 }
 
 namespace Pibrary.Input {
-    interface IInputManager {
+    interface IInputProvider {
         + GetMousePosition()
     }
 
-    class InputManager implements IInputManager {
+    class UnityInputProvider implements IInputProvider {
+    }
+}
+
+namespace Pibrary.PiMaterial {
+    interface IMaterialManager {
+        + CreateUIMaterial()
+    }
+
+    class UnityMaterialManager implements IMaterialManager {
+
     }
 }
 

@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using Object = System.Object;
 
 namespace Pibrary.UI
 {
@@ -57,5 +58,47 @@ namespace Pibrary.UI
     {
         public T paper;
         public T Default;
+    }
+
+    public class ThemeParamFactory
+    {
+        public static Material createUIMaterial()
+        {
+            return new Material(Shader.Find("UI/Default"));
+        }
+        
+        public static ObjectParams<Material> createObjectParamsMaterial(
+            Color main, Color light, Color dark, Color contrastText)
+        {
+            var param = new ObjectParams<Material>
+            {
+                main = createUIMaterial(),
+                light = createUIMaterial(),
+                dark = createUIMaterial(),
+                contrastText = createUIMaterial(),
+            };
+            param.main.color = main;
+            param.light.color = light;
+            param.dark.color = dark;
+            param.contrastText.color = contrastText;
+
+            return param;
+        }
+
+        public static ObjectParams<Material> createObjectParamsMaterial(ObjectColor color)
+        {
+            return createObjectParamsMaterial(color.main, color.light, color.dark, color.contrastText);
+        }
+
+        public static ObjectColor convertObjectColor(ObjectParams<Material> param)
+        {
+            return new ObjectColor
+            {
+                main = param.main.color,
+                light = param.light.color,
+                dark = param.dark.color,
+                contrastText = param.contrastText.color,
+            };
+        }
     }
 }

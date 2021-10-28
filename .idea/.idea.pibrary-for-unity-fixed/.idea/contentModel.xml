@@ -102,6 +102,10 @@
               <e p="OAuthHandler.cs" t="Include" />
               <e p="Pibrary.cs" t="Include" />
               <e p="PibraryInstaller.cs" t="Include" />
+              <e p="PiMaterial" t="Include">
+                <e p="IMaterialManager.cs" t="Include" />
+                <e p="UnityMaterialManager.cs" t="Include" />
+              </e>
               <e p="Presenters" t="Include">
                 <e p="AuthPresenter.cs" t="Include" />
               </e>
@@ -116,12 +120,17 @@
                 </e>
                 <e p="ColorController.cs" t="Include" />
                 <e p="ColorLoader.cs" t="Include" />
+                <e p="ColorSetters" t="Include">
+                  <e p="IColorSetter.cs" t="Include" />
+                  <e p="ImageColorSetter.cs" t="Include" />
+                  <e p="ShapeColorSetter.cs" t="Include" />
+                  <e p="TextColorSetter.cs" t="Include" />
+                  <e p="TMPTextColorSetter.cs" t="Include" />
+                </e>
                 <e p="ColorTypes.cs" t="Include" />
                 <e p="Copyright" t="Include">
                   <e p="CopyrightController.cs" t="Include" />
                 </e>
-                <e p="IColorSetter.cs" t="Include" />
-                <e p="ImageColorSetter.cs" t="Include" />
                 <e p="InputField" t="Include">
                   <e p="BarController.cs" t="Include" />
                   <e p="InputFieldController.cs" t="Include" />
@@ -129,7 +138,6 @@
                 </e>
                 <e p="ThemeConfig.cs" t="Include" />
                 <e p="ThemeParams.cs" t="Include" />
-                <e p="TMPTextColorSetter.cs" t="Include" />
               </e>
               <e p="Utils" t="Include">
                 <e p="ColorUtil.cs" t="Include" />

@@ -14,7 +14,6 @@ namespace Pibrary.Auth
             if (GoogleSignIn.Configuration == null)
             {
                 string clientID = "852955764328-acsd9qpovds074rp7q1a53crcd94nsqt.apps.googleusercontent.com";
-                Debug.Log(clientID);
                 GoogleSignIn.Configuration = new GoogleSignInConfiguration {
                     RequestIdToken = true,
                     WebClientId = clientID
