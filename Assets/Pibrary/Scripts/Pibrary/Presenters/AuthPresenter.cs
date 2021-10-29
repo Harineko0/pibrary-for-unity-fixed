@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Threading.Tasks;
+using Cysharp.Threading.Tasks;
 using Firebase.Auth;
 using Pibrary.Auth;
 using Pibrary.Data;
 using Pibrary.Regex;
+using Pibrary.UI;
 using Pibrary.UI.Alert;
+using Pibrary.UI.LoadingScreen;
 using TMPro;
 using UniRx;
 using UnityEngine;
@@ -18,43 +21,39 @@ namespace Pibrary.Presenters
         [SerializeField] private Button emailButton;
         [SerializeField] private TMP_InputField emailField;
         [SerializeField] private TMP_InputField passwordField;
-        [SerializeField] private GameObject loadingScreen;
+        [SerializeField] private LoadingScreenController loadingScreen;
 
         [SerializeField] private AlertController alert;
+        [SerializeField] private SceneLoader sceneLoader;
 
-        private ReactiveProperty<bool> loading = new ReactiveProperty<bool>(false);
+        [SerializeField] private string homeSceneName = "HomeScene";
+
         private IAuthHandler authHandler;
+        private IDataStore<SaveData> dataStore;
         
         private void Start()
         {
             var pibrary = Pibrary.DefaultInstance;
             pibrary.Initialize();
             authHandler = pibrary.AuthHandler;
-            var dataStore = pibrary.DataStore;
+            dataStore = pibrary.DataStore;
             
             googleButton
                 .OnClickAsObservable()
                 .ThrottleFirst(TimeSpan.FromMilliseconds(1000))
-                .Where(_ => loading.Value == false)
                 .Subscribe(OnGoogleAuth)
                 .AddTo(this);
 
             emailButton
                 .OnClickAsObservable()
                 .ThrottleFirst(TimeSpan.FromMilliseconds(1000))
-                .Where(_ => loading.Value == false)
                 .Subscribe(OnEmailAuth)
                 .AddTo(this);
-
-            loading.Subscribe(loading =>
-            {
-                loadingScreen.SetActive(loading);
-            });
         }
 
         private void OnEmailAuth(Unit unit)
         {
-            loading.Value = true;
+            loadingScreen.SetEnable(true);
             
             string email = emailField.text;
             string password = passwordField.text;
@@ -62,17 +61,17 @@ namespace Pibrary.Presenters
             if (String.IsNullOrEmpty(email))
             {
                 alert.Alert("メールアドレスを入力してください", AlertType.warning);
-                loading.Value = false;
+                loadingScreen.SetEnable(false);
             }
             else if (!RegexUtilities.IsValidEmail(email))
             {
                 alert.Alert("メールアドレスが無効です", AlertType.warning);
-                loading.Value = false;
+                loadingScreen.SetEnable(false);
             }
             else if (String.IsNullOrEmpty(password))
             {
                 alert.Alert("パスワードを入力してください", AlertType.warning);
-                loading.Value = false;
+                loadingScreen.SetEnable(false);
             }
             else
             {
@@ -83,7 +82,7 @@ namespace Pibrary.Presenters
 
         private void OnGoogleAuth(Unit unit)
         {
-            loading.Value = true;
+            loadingScreen.SetEnable(true);
             
             var task = authHandler.CallGoogleSignIn();
             OnAuthTask(task);
@@ -91,17 +90,33 @@ namespace Pibrary.Presenters
 
         private async void OnAuthTask(Task<FirebaseUser> task)
         {
+            Debug.Log("認証中");
+            loadingScreen.SetEnable("認証中");
             var user = await task;
 
             if (user == null)
             {
                 alert.Alert("ログインに失敗しました", AlertType.error);
+                loadingScreen.SetEnable(false);
                 return;
             }
-            
-            alert.Alert("ようこそ、" + user.DisplayName + "さん", AlertType.success);
 
-            loading.Value = false;
+            loadingScreen.SetEnable("ユーザーデータを取得しています");
+            await UniTask.WaitUntilValueChanged(dataStore.SaveData, x => x.Value);
+
+            SaveData data = dataStore.SaveData.Value;
+                
+            if (data == null)
+            {
+                alert.Alert("ユーザーデータの取得に失敗しました", AlertType.error);
+                loadingScreen.SetEnable(false);
+            }
+            else
+            {
+                alert.Alert("ようこそ、" + user.DisplayName + "さん", AlertType.success);
+                loadingScreen.SetEnable(false);
+                sceneLoader.LoadScene(homeSceneName);
+            }
         }
     }
 }

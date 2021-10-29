@@ -4,7 +4,8 @@ public class SingletonMonoBehaviour<T> : MonoBehaviour where T : SingletonMonoBe
 {
     protected static T instance;
     public static T Instance {
-        get {
+        get
+        {
             if (instance == null) {
                 instance = (T)FindObjectOfType (typeof(T));
 				

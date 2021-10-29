@@ -11,6 +11,7 @@ namespace Pibrary.Config
         [SerializeField] public OAuthConfig OAuthConfig = new OAuthConfig();
         [SerializeField] public ContentConfig ContentConfig = new ContentConfig();
         [SerializeField] public ThemeConfig ThemeConfig = new ThemeConfig();
+        [SerializeField] public SceneConfig SceneConfig = new SceneConfig();
     }
     
     [Serializable]
@@ -24,5 +25,13 @@ namespace Pibrary.Config
     public class ContentConfig
     {
         public string ContentID = "";
+    }
+
+    [Serializable]
+    public class SceneConfig
+    {
+        public string titleScene = "PibraryTitleScene";
+        public string authScene = "PibraryAuthScene";
+        public string homeScene = "PibraryHomeScene";
     }
 }

@@ -40,7 +40,6 @@ namespace Pibrary
             auth = FirebaseAuth.DefaultInstance;
             
             auth.StateChanged += FetchUserData;
-            FetchUserData(this, null);
             DataHandler.UserData.Where(data => data != null).Subscribe(SaveSaveData);
             
             FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
@@ -63,7 +62,7 @@ namespace Pibrary
         }
         
         void FetchUserData(object sender, System.EventArgs eventArgs) {
-            if (auth.CurrentUser != user) {
+            if (auth.CurrentUser != null && auth.CurrentUser != user) {
                 bool signedIn = user != auth.CurrentUser && auth.CurrentUser != null;
                 if (!signedIn && user != null) {
                     Debug.Log("Signed out " + user.UserId);

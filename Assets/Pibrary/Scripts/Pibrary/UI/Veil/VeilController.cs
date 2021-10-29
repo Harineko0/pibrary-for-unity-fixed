@@ -12,6 +12,7 @@ namespace Pibrary.UI.Veil
         [SerializeField] private Ease ease = Ease.OutCubic;
         
         private Image image;
+        
         private void OnEnable()
         {
             if (image == null)

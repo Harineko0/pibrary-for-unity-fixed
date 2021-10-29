@@ -36,6 +36,13 @@
             </e>
           </e>
         </e>
+        <e p="Flat Screen Transitions" t="Include">
+          <e p="Read Me.txt" t="Include" />
+          <e p="Scripts" t="Include">
+            <e p="FSTDemoManager.cs" t="Include" />
+            <e p="LaunchURL.cs" t="Include" />
+          </e>
+        </e>
         <e p="google-services.json" t="Include" />
         <e p="GoogleSignIn" t="Include">
           <e p="Editor" t="Include">
@@ -108,6 +115,7 @@
               </e>
               <e p="Presenters" t="Include">
                 <e p="AuthPresenter.cs" t="Include" />
+                <e p="TitlePresenter.cs" t="Include" />
               </e>
               <e p="Regex" t="Include">
                 <e p="RegexUtilities.cs" t="Include" />
@@ -142,7 +150,11 @@
                   <e p="InputFieldController.cs" t="Include" />
                   <e p="PlaceholderController.cs" t="Include" />
                 </e>
+                <e p="LoadingScreen" t="Include">
+                  <e p="LoadingScreenController.cs" t="Include" />
+                </e>
                 <e p="ScaleCopy.cs" t="Include" />
+                <e p="SceneLoader.cs" t="Include" />
                 <e p="SizeAdjuster.cs" t="Include" />
                 <e p="ThemeConfig.cs" t="Include" />
                 <e p="ThemeParams.cs" t="Include" />

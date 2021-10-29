@@ -40,5 +40,10 @@ namespace Pibrary.Config
         {
             get { return Loader.Config.ThemeConfig; }
         }
+
+        public static SceneConfig SceneConfig
+        {
+            get { return Loader.Config.SceneConfig; }
+        }
     }
 }

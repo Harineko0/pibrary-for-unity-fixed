@@ -4,6 +4,15 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Pibrary/Scenes/PibraryTitleScene.unity
+    guid: deefb278aa01fd247ba77fb96d8396a0
+  - enabled: 1
+    path: Assets/Pibrary/Scenes/PibraryAuthScene.unity
+    guid: 020a5b2f553d43c42a0446a01d266421
+  - enabled: 1
+    path: Assets/Pibrary/Scenes/PiibraryHomeScene.unity
+    guid: 8ca8185b4e3941c4cb4d81f2c1d4e8fb
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: ad92c66f668ad174ab922e8bc5e50c9c, type: 2}

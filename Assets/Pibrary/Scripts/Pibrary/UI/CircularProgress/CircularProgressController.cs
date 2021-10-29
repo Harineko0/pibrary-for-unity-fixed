@@ -11,12 +11,14 @@ namespace Pibrary.UI.CircularProgress
         [SerializeField] private float speed = 1.5f;
         private Image image;
 
-        private void Start()
+        private void OnEnable()
         {
             image = GetComponent<Image>();
-
+            
             var loader = ColorLoader.Instance;
             image.material = loader.ThemeMaterial.GetObjectParams(type).main;
+            image.fillAmount = 0f;
+            image.fillClockwise = false;
             
             var sequence = DOTween.Sequence();
             sequence.Append(image.DOFillAmount(1f, speed))

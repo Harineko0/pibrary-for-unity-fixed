@@ -47,8 +47,10 @@
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ColorSetters\TextColorSetter.cs" />
      <Compile Include="Assets\Shapes2D\Demos\DragCamera.cs" />
      <Compile Include="Assets\GoogleSignIn\Impl\BaseObject.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\SizeAdjuster.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ColorSetters\IColorSetter.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Auth\MobileGoogleAuthHandler.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\Alert\AlertController.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Config\AddressableConfigLoader.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Config\IConfigLoader.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\InputField\InputFieldController.cs" />
@@ -56,8 +58,10 @@
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Utils\SingletonMonoBehavior.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\OAuthHandler.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\PibraryInstaller.cs" />
+     <Compile Include="Assets\Flat Screen Transitions\Scripts\FSTDemoManager.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Data\FirebaseDataHandler.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Flappy Shapes\Bird.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ScaleCopy.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ColorSetters\ImageColorSetter.cs" />
      <Compile Include="Assets\GoogleSignIn\GoogleSignInConfiguration.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ThemeParams.cs" />
@@ -67,6 +71,7 @@
      <Compile Include="Assets\Shapes2D\Demos\InputUtils.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\Copyright\CopyrightController.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Installers\PibraryInstaller.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\Veil\VeilController.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Utils\ColorUtil.cs" />
      <Compile Include="Assets\GoogleSignIn\GoogleSignInUser.cs" />
      <Compile Include="Assets\GoogleSignIn\Impl\GoogleSignInImpl.cs" />
@@ -76,6 +81,7 @@
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Data\IDataStore.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\PiMaterial\UnityMaterialManager.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Config\ResourceConfigLoader.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\Regex\RegexUtilities.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Input\UnityInputProvider.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Simple Effect\TapEffect.cs" />
      <Compile Include="Assets\Shapes2D\Scripts\Shapes2DPrefs.cs" />
@@ -93,6 +99,7 @@
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ColorSetters\ShapeColorSetter.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Stress Test\Spawner.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\InputField\PlaceholderController.cs" />
+     <Compile Include="Assets\Flat Screen Transitions\Scripts\LaunchURL.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\Button\SizeController.cs" />
      <Compile Include="Assets\Shapes2D\Demos\Simple Effect\EffectDemo.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Config\PibraryConfig.cs" />
@@ -108,11 +115,9 @@
      <Compile Include="Assets\Shapes2D\Demos\Flappy Shapes\Game.cs" />
      <Compile Include="Assets\Pibrary\Scripts\Pibrary\Config\ConfigProvider.cs" />
      <Compile Include="Assets\Shapes2D\Scripts\PolyMap.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\Regex\RegexUtilities.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\Alert\AlertController.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\SizeAdjuster.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\ScaleCopy.cs" />
-     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\Veil\VeilController.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\LoadingScreen\LoadingScreenController.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\Presenters\TitlePresenter.cs" />
+     <Compile Include="Assets\Pibrary\Scripts\Pibrary\UI\SceneLoader.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\Shapes2D\Shaders\Triangle.cginc" />
@@ -139,6 +144,7 @@
      <None Include="Assets\google-services.json" />
      <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <None Include="Assets\Shapes2D\changelog.txt" />
+     <None Include="Assets\Flat Screen Transitions\Read Me.txt" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\Shapes2D\Shaders\Path.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
