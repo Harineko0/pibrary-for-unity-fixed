@@ -34,11 +34,13 @@ namespace Pibrary.Presenters
                 }
             }).AddTo(this);
 
+            Debug.Log("start");
             foreach (var button in titleButton)
             {
                 button.OnClickAsObservable()
                     .Subscribe(_ =>
                     {
+                        Debug.Log("subscribe");
                         sceneLoader.LoadScene(ConfigProvider.SceneConfig.titleScene);
                     }).AddTo(this);
             }

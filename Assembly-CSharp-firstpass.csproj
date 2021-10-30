@@ -805,6 +805,10 @@
       <Project>{f2916406-16eb-5f4c-1acc-e2667622adc5}</Project>
       <Name>Unity.VisualScripting.State</Name>
     </ProjectReference>
+    <ProjectReference Include="CopoCopo.TextMeshProAnimator.Runtime.csproj">
+      <Project>{177657d6-c40f-0422-2776-17c43ded3657}</Project>
+      <Name>CopoCopo.TextMeshProAnimator.Runtime</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
