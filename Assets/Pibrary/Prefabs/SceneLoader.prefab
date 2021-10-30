@@ -46,6 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 4933908920945426773}
   animationName: Expand
+  closeAnimationName: 
+  delay: 2000
 --- !u!1 &4983595251931239349
 GameObject:
   m_ObjectHideFlags: 0
@@ -104,7 +106,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!114 &4983595251931239346
 MonoBehaviour:

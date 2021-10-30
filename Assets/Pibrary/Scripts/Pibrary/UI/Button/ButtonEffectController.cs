@@ -14,8 +14,9 @@ namespace Pibrary.UI.Button
     {
         [Inject] private IInputProvider inputProvider;
         
-        [SerializeField] private GameObject parent;
+        // [SerializeField] private GameObject parent;
         [SerializeField] private GameObject clickEffect;
+        [SerializeField] private float clickScale = 0.97f;
         private float transitionSpeed = 0.4f;
         private ColorType type = ColorType.primary;
         private RectTransform rect;
@@ -32,6 +33,8 @@ namespace Pibrary.UI.Button
         
         private void Start()
         {
+            var parent = transform.parent.gameObject;
+            
             rect = parent.GetComponent<RectTransform>();
             var image = GetComponent<Image>();
             var button = GetComponent<UnityEngine.UI.Button>();
@@ -88,7 +91,7 @@ namespace Pibrary.UI.Button
 
         public void OnPointerDown(PointerEventData eventData)
         {
-            rect.DOScale(0.97f, transitionSpeed);
+            rect.DOScale(clickScale, transitionSpeed);
         }
         
         public void OnPointerUp(PointerEventData eventData)

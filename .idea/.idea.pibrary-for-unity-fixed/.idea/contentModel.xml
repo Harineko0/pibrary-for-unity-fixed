@@ -114,7 +114,10 @@
                 <e p="UnityMaterialManager.cs" t="Include" />
               </e>
               <e p="Presenters" t="Include">
+                <e p="AppPresenter.cs" t="Include" />
                 <e p="AuthPresenter.cs" t="Include" />
+                <e p="HomePresenter.cs" t="Include" />
+                <e p="SignOutButton.cs" t="Include" />
                 <e p="TitlePresenter.cs" t="Include" />
               </e>
               <e p="Regex" t="Include">

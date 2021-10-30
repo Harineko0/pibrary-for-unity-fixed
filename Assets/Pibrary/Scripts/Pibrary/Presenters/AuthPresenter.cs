@@ -3,6 +3,7 @@ using System.Threading.Tasks;
 using Cysharp.Threading.Tasks;
 using Firebase.Auth;
 using Pibrary.Auth;
+using Pibrary.Config;
 using Pibrary.Data;
 using Pibrary.Regex;
 using Pibrary.UI;
@@ -26,10 +27,9 @@ namespace Pibrary.Presenters
         [SerializeField] private AlertController alert;
         [SerializeField] private SceneLoader sceneLoader;
 
-        [SerializeField] private string homeSceneName = "HomeScene";
-
         private IAuthHandler authHandler;
         private IDataStore<SaveData> dataStore;
+        private IDataHandler dataHandler;
         
         private void Start()
         {
@@ -37,6 +37,7 @@ namespace Pibrary.Presenters
             pibrary.Initialize();
             authHandler = pibrary.AuthHandler;
             dataStore = pibrary.DataStore;
+            dataHandler = pibrary.DataHandler;
             
             googleButton
                 .OnClickAsObservable()
@@ -102,7 +103,7 @@ namespace Pibrary.Presenters
             }
 
             loadingScreen.SetEnable("ユーザーデータを取得しています");
-            await UniTask.WaitUntilValueChanged(dataStore.SaveData, x => x.Value);
+            await UniTask.WaitUntilValueChanged(dataHandler.UserData, x => x.Value);
 
             SaveData data = dataStore.SaveData.Value;
                 
@@ -114,8 +115,9 @@ namespace Pibrary.Presenters
             else
             {
                 alert.Alert("ようこそ、" + user.DisplayName + "さん", AlertType.success);
+                await UniTask.Delay(TimeSpan.FromSeconds(1));
                 loadingScreen.SetEnable(false);
-                sceneLoader.LoadScene(homeSceneName);
+                sceneLoader.LoadScene(ConfigProvider.SceneConfig.homeScene);
             }
         }
     }

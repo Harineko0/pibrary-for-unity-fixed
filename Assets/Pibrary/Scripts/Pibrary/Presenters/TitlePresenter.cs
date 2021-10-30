@@ -16,12 +16,11 @@ namespace Pibrary.Presenters
         [SerializeField] private Button startButton;
         [SerializeField] private SceneLoader sceneLoader;
         
-        private bool isSignIn;
+        private FirebaseAuth auth;
         
         private void Start()
         {
-            var auth = FirebaseAuth.DefaultInstance;
-            isSignIn = auth.CurrentUser != null;
+            auth = FirebaseAuth.DefaultInstance;
             startButton
                 .OnClickAsObservable()
                 .Subscribe(OnClickStart)
@@ -31,6 +30,7 @@ namespace Pibrary.Presenters
         private void OnClickStart(Unit _)
         {
             SceneConfig config = ConfigProvider.SceneConfig;
+            bool isSignIn = auth.CurrentUser != null;
             sceneLoader.LoadScene(isSignIn ? config.homeScene : config.authScene);
         }
     }

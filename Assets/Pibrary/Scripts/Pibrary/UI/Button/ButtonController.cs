@@ -17,8 +17,15 @@ namespace Pibrary.UI.Button
 
         private void OnValidate()
         {
-            buttonText.text = text;
-            size.Resize();
+            if (buttonText != null)
+            {
+                buttonText.text = text;
+            }
+            
+            if (size != null)
+            {
+                size.Resize();
+            }
         }
         
         private void Awake()
